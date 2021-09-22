@@ -86,31 +86,59 @@
         color: white;
       }
 
-    .col-3 {
-      width: 100%;
-      float: left;
-      padding: 5px;
-    }
-
-    .col-3 img {
-      width: 100%;
-    }
-
-    @media only screen and (min-width:500px) {
-      .col-3 {
-        width: 50%;
+      .help {
+        height: 164px;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.3);
+        z-index: 1;
+        position: absolute;
+        top: 258px;
       }
-    }
-
-    @media only screen and (min-width:600px) {
-      .col-3 {
-        width: 25%;
+      .search {
+        position: relative;
+        z-index: 2;
+        width: 500px;
+        height: 30px;
+        background-color: white;
+        padding-bottom: 2px;
+        border-radius: 50px;
+        top: 25vh;
+        left: 700px;
       }
-    }
-
-    @media only screen and (min-width:992px) {
-      .col-3 {
-        width: 12.5%;
+      input.isearch {
+        padding: 0px 0px;
+        height: 25px;
+        width: 250px;
+        border: none;
+        outline: none;
+        vertical-align: super;
+        font-size: 20px;
+      }
+      .menu {
+        position: relative;
+        left: 70px;
+      }
+      .cate-text {
+        position: relative;
+        left: 60px;
+        bottom: 3px;
+      }
+      .cart {
+        display: inline-block;
+        width: 110px;
+        /* height: 50px; */
+        position: absolute;
+        left: 550px;
+        background-color: black;
+        padding: 2px;
+        border-radius: 10px;
+      }
+      .scart {
+        vertical-align: sub;
+      }
+      .cart span {
+        vertical-align: super;
+        margin: 2px;
       }
     </style>
   </head>
