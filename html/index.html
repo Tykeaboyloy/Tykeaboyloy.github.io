@@ -2,93 +2,207 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Footer Books</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        .col-3 {
-            width: 100%;
-            float: left;
-            padding: 5px;
-        }
-        .col-3 img {
-            width: 100%;
-        }
-        @media only screen and (min-width:500px){
-            .col-3 {
-                width: 50%;
-            }
-        }
-        @media only screen and (min-width:600px) {
-            .col-3 {
-                width: 25%;
-            }
-        }
-        @media only screen and (min-width:992px) {
-            .col-3 {
-                width: 12.5%;
-            }
-        }
-        .arrival{
-            border-bottom:2px solid goldenrod;
-            margin-bottom: 5px;
-        }
-        .arrival > a{
-            text-decoration: none;
-            font-size:20px;
-            color:black;
-            margin-left:4px;
-        }
-        .arrival .material-icons{
-            vertical-align: bottom;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Footer Books</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .col-3 {
+      width: 100%;
+      float: left;
+      padding: 5px;
+    }
+
+    .col-3 img {
+      width: 100%;
+    }
+
+    @media only screen and (min-width:500px) {
+      .col-3 {
+        width: 50%;
+      }
+    }
+
+    @media only screen and (min-width:600px) {
+      .col-3 {
+        width: 25%;
+      }
+    }
+
+    @media only screen and (min-width:992px) {
+      .col-3 {
+        width: 12.5%;
+      }
+    }
+
+    .arrival {
+      border-bottom: 2px solid goldenrod;
+      margin-bottom: 5px;
+    }
+
+    .arrival>a {
+      text-decoration: none;
+      font-size: 20px;
+      color: black;
+      margin-left: 4px;
+    }
+
+    .arrival .material-icons {
+      vertical-align: bottom;
+    }
+
+    .quote>span {
+      position: absolute;
+      z-index: 2;
+      font-size: 20px;
+      margin: 0 0;
+      top: 298px;
+      margin: 0 20px;
+      color: white;
+    }
+
+    .help {
+      height: 164px;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.3);
+      z-index: 1;
+      position: absolute;
+      top: 258px;
+    }
+
+    .search {
+      position: relative;
+      z-index: 2;
+      width: 500px;
+      height: 30px;
+      background-color: white;
+      padding-bottom: 2px;
+      border-radius: 50px;
+      top: 25vh;
+      left: 700px;
+    }
+
+    input.isearch {
+      padding: 0px 0px;
+      height: 25px;
+      width: 250px;
+      border: none;
+      outline: none;
+      vertical-align: super;
+      font-size: 20px;
+    }
+
+    .menu {
+      position: relative;
+      left: 70px;
+    }
+
+    .cate-text {
+      position: relative;
+      left: 60px;
+      bottom: 3px;
+    }
+
+    .cart {
+      display: inline-block;
+      width: 110px;
+      /* height: 50px; */
+      position: absolute;
+      left: 550px;
+      background-color: black;
+      padding: 2px;
+      border-radius: 10px;
+    }
+
+    .scart {
+      vertical-align: sub;
+    }
+
+    .cart span {
+      vertical-align: super;
+      margin: 2px;
+    }
+  </style>
 </head>
 
-  <body>
-    <div class="arrival">
-        <span class="material-icons">
-            library_books
-        </span>
-        <a href="#">New Arrival</a>
-    </div>
-    <div class="col-3">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbpDt16yWDRo2jznFHaPyUWPuIJpjw2ugrseyrZKi6V9Vb2tHMnu5d4SZ1MFQEp4UBCVA&usqp=CAU"
-            alt="book">
-    </div>
-    <div class="col-3">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbpDt16yWDRo2jznFHaPyUWPuIJpjw2ugrseyrZKi6V9Vb2tHMnu5d4SZ1MFQEp4UBCVA&usqp=CAU"
-            alt="book">
-    </div>
-    <div class="col-3">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbpDt16yWDRo2jznFHaPyUWPuIJpjw2ugrseyrZKi6V9Vb2tHMnu5d4SZ1MFQEp4UBCVA&usqp=CAU"
-            alt="book">
-    </div>
-    <div class="col-3">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbpDt16yWDRo2jznFHaPyUWPuIJpjw2ugrseyrZKi6V9Vb2tHMnu5d4SZ1MFQEp4UBCVA&usqp=CAU"
-            alt="book">
-    </div>
-    <div class="col-3">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbpDt16yWDRo2jznFHaPyUWPuIJpjw2ugrseyrZKi6V9Vb2tHMnu5d4SZ1MFQEp4UBCVA&usqp=CAU"
-            alt="book">
-    </div>
-    <div class="col-3">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbpDt16yWDRo2jznFHaPyUWPuIJpjw2ugrseyrZKi6V9Vb2tHMnu5d4SZ1MFQEp4UBCVA&usqp=CAU"
-            alt="book">
-    </div>
-    <div class="col-3">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbpDt16yWDRo2jznFHaPyUWPuIJpjw2ugrseyrZKi6V9Vb2tHMnu5d4SZ1MFQEp4UBCVA&usqp=CAU"
-            alt="book">
-    </div>
-    <div class="col-3">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbpDt16yWDRo2jznFHaPyUWPuIJpjw2ugrseyrZKi6V9Vb2tHMnu5d4SZ1MFQEp4UBCVA&usqp=CAU"
-            alt="book">
-    </div>
+<body>
+  <div class="arrival">
+    <span class="material-icons">
+      library_books
+    </span>
+    <a href="#">New Arrival</a>
+  </div>
+  <div class="col-3">
+    <img
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbpDt16yWDRo2jznFHaPyUWPuIJpjw2ugrseyrZKi6V9Vb2tHMnu5d4SZ1MFQEp4UBCVA&usqp=CAU"
+      alt="book">
+  </div>
+  <div class="col-3">
+    <img
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbpDt16yWDRo2jznFHaPyUWPuIJpjw2ugrseyrZKi6V9Vb2tHMnu5d4SZ1MFQEp4UBCVA&usqp=CAU"
+      alt="book">
+  </div>
+  <div class="col-3">
+    <img
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbpDt16yWDRo2jznFHaPyUWPuIJpjw2ugrseyrZKi6V9Vb2tHMnu5d4SZ1MFQEp4UBCVA&usqp=CAU"
+      alt="book">
+  </div>
+  <div class="col-3">
+    <img
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbpDt16yWDRo2jznFHaPyUWPuIJpjw2ugrseyrZKi6V9Vb2tHMnu5d4SZ1MFQEp4UBCVA&usqp=CAU"
+      alt="book">
+  </div>
+  <div class="col-3">
+    <img
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbpDt16yWDRo2jznFHaPyUWPuIJpjw2ugrseyrZKi6V9Vb2tHMnu5d4SZ1MFQEp4UBCVA&usqp=CAU"
+      alt="book">
+  </div>
+  <div class="col-3">
+    <img
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbpDt16yWDRo2jznFHaPyUWPuIJpjw2ugrseyrZKi6V9Vb2tHMnu5d4SZ1MFQEp4UBCVA&usqp=CAU"
+      alt="book">
+  </div>
+  <div class="col-3">
+    <img
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbpDt16yWDRo2jznFHaPyUWPuIJpjw2ugrseyrZKi6V9Vb2tHMnu5d4SZ1MFQEp4UBCVA&usqp=CAU"
+      alt="book">
+  </div>
+  <div class="col-3">
+    <img
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbpDt16yWDRo2jznFHaPyUWPuIJpjw2ugrseyrZKi6V9Vb2tHMnu5d4SZ1MFQEp4UBCVA&usqp=CAU"
+      alt="book">
+  </div>
+  <div class="help"></div>
+  <div class="search">
+    <table class="iconsearch">
+      <tr>
+        <td>
+          <i class="material-icons">search</i>
+        </td>
+        <td>
+          <!-- Search form -->
+          <input class="isearch" type="text" placeholder="Search" aria-label="Search" />
+        </td>
+        <td>
+          <span class="cate-text">All Categories</span>
+        </td>
+        <td>
+          <a href="#"><i class="material-icons menu">menu</i></a>
+        </td>
+        <div class="cart">
+          <span style="color: white">My Cart</span>
+          <a href="#"><i class="material-icons sCart" style="color: white">shopping_cart</i></a>
+        </div>
+      </tr>
+    </table>
+  </div>
+  </div>
 </body>
+
 </html>
