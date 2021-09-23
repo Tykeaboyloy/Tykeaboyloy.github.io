@@ -1,27 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Frugality Book</title>
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
     <style>
-      body {
+      * {
         margin: 0px;
         padding: 0px;
         box-sizing: border-box;
       }
-
-      .login {
-        font-size: 15px;
-        height: 4vh;
-        background-color: rgb(250, 250, 250);
-      }
-
+/* 
       #subLogin {
         float: right;
         background-color: rgb(10, 230, 109);
@@ -46,7 +43,7 @@
         margin: 0px 5px;
       }
 
-      img {
+      .background img {
         width: 100%;
         height: 60vh;
         position: absolute;
@@ -126,7 +123,7 @@
       .cart {
         display: inline-block;
         width: 110px;
-        /* height: 50px; */
+       
         position: absolute;
         left: 550px;
         background-color: rgb(10, 230, 109);
@@ -139,12 +136,21 @@
       .cart span {
         vertical-align: super;
         margin: 2px;
+      } */
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+        position: absolute;
+        top: 60vh;
+      }
+      .g-col-3 img {
+        padding: 12px;
       }
     </style>
   </head>
 
   <body>
-    <div class="login">
+    <!-- <div class="login">
       <div id="subLogin">
         <span class="material-icons"> account_circle </span
         ><a href="#"><b>Login</b></a>
@@ -175,7 +181,7 @@
               <i class="material-icons">search</i>
             </td>
             <td>
-              <!-- Search form -->
+             
               <input
                 class="isearch"
                 type="text"
@@ -190,7 +196,7 @@
               <a href="#"><i class="material-icons menu">menu</i></a>
             </td>
             <div class="cart">
-              <span style="color: black; margin-left: 10px;">My Cart</span>
+              <span style="color: black; margin-left: 10px">My Cart</span>
               <a href="#"
                 ><i class="material-icons sCart" style="color: black"
                   >shopping_cart</i
@@ -202,13 +208,91 @@
       </div>
     </div>
     <div class="navContainer">
-      <ul style="list-style-type: none;">
+      <ul style="list-style-type: none">
         <li class="element">Store</li>
         <li class="element"></li>
         <li class="element"></li>
         <li class="element"></li>
         <li class="element"></li>
       </ul>
+    </div> -->
+
+    <div class="arrival">
+      <span class="material-icons"> library_books </span>
+      <a href="#">New Arrival</a>
     </div>
+
+    <div class="grid">
+      
+    </div>
+    <script>
+      var books = [
+        {
+          url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbpDt16yWDRo2jznFHaPyUWPuIJpjw2ugrseyrZKi6V9Vb2tHMnu5d4SZ1MFQEp4UBCVA&usqp=CAU",
+          title: "Card title",
+          desc: "Some quick example text to build on the card title and make up the bulk of the card's content.",
+          link: "#",
+        },
+        {
+          url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbpDt16yWDRo2jznFHaPyUWPuIJpjw2ugrseyrZKi6V9Vb2tHMnu5d4SZ1MFQEp4UBCVA&usqp=CAU",
+          title: "Card title",
+          desc: "Some quick example text to build on the card title and make up the bulk of the card's content.",
+          link: "#",
+        },
+        {
+          url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbpDt16yWDRo2jznFHaPyUWPuIJpjw2ugrseyrZKi6V9Vb2tHMnu5d4SZ1MFQEp4UBCVA&usqp=CAU",
+          title: "Card title",
+          desc: "Some quick example text to build on the card title and make up the bulk of the card's content.",
+          link: "#",
+        },
+        {
+          url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbpDt16yWDRo2jznFHaPyUWPuIJpjw2ugrseyrZKi6V9Vb2tHMnu5d4SZ1MFQEp4UBCVA&usqp=CAU",
+          title: "Card title",
+          desc: "Some quick example text to build on the card title and make up the bulk of the card's content.",
+          link: "#",
+        },
+        {
+          url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbpDt16yWDRo2jznFHaPyUWPuIJpjw2ugrseyrZKi6V9Vb2tHMnu5d4SZ1MFQEp4UBCVA&usqp=CAU",
+          title: "Card title",
+          desc: "Some quick example text to build on the card title and make up the bulk of the card's content.",
+          link: "#",
+        },
+        {
+          url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbpDt16yWDRo2jznFHaPyUWPuIJpjw2ugrseyrZKi6V9Vb2tHMnu5d4SZ1MFQEp4UBCVA&usqp=CAU",
+          title: "Card title",
+          desc: "Some quick example text to build on the card title and make up the bulk of the card's content.",
+          link: "#",
+        },
+        {
+          url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbpDt16yWDRo2jznFHaPyUWPuIJpjw2ugrseyrZKi6V9Vb2tHMnu5d4SZ1MFQEp4UBCVA&usqp=CAU",
+          title: "Card title",
+          desc: "Some quick example text to build on the card title and make up the bulk of the card's content.",
+          link: "#",
+        },
+        {
+          url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbpDt16yWDRo2jznFHaPyUWPuIJpjw2ugrseyrZKi6V9Vb2tHMnu5d4SZ1MFQEp4UBCVA&usqp=CAU",
+          title: "Card title",
+          desc: "Some quick example text to build on the card title and make up the bulk of the card's content.",
+          link: "#",
+        },
+      ];
+
+      var renderBooks = document.getElementsByClassName("grid")[0];
+      books.map((item, index) => {
+        renderBooks.innerHTML =
+          renderBooks.innerHTML +
+          ` <div class="g-col-3">
+        <img
+          src=${item.url}
+          class="card-img-top" alt="book">
+        <div class="card-title">
+          <h5 class="card-text">${item.title}</h5>
+          <p clclass="card-body">${item.desc}</p>
+          <a href=${item.link} class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+        `;
+      });
+    </script>
   </body>
 </html>
