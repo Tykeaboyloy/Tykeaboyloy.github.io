@@ -32,8 +32,8 @@
   z-index: 1;
   background-image: url(https://png.pngtree.com/background/20210710/original/pngtree-blue-reading-flat-bookstore-poster-advertising-background-material-picture-image_994781.jpg);
   background-repeat: no-repeat;
-  position: relative;
-  top: -62vh;
+  position: absolute;
+  top: 0;
 }
 .icon {
   vertical-align: sub;
@@ -50,8 +50,9 @@ a:hover {
   float: right;
   width: 20vw;
   height: 62vh;
-  position: relative;
-  top: -124vh;
+  position: absolute;
+  right: 1vw;
+  top: 0;
   text-align: center;
   color: white;
   padding: 2rem 0 2rem 0;
