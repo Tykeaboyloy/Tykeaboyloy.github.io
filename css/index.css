@@ -15,6 +15,7 @@
   height: 8vh;
   background-color: #27a79c;
   text-align: left;
+  padding: 0.5rem;
 }
 .navContainer {
   display: flex;
@@ -41,13 +42,13 @@
   font-size: 30pt;
   position: absolute;
   bottom: 17.2rem;
-  left: 5rem;
+  left: 2rem;
 }
 .search > .searchinput {
   width: 22rem;
   height: 3rem;
   position: absolute;
-  left: 8rem;
+  left: 5rem;
   bottom: 17rem;
   padding: 1rem;
   border: 5px solid #27a79c;
