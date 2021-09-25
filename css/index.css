@@ -64,10 +64,11 @@
   font-size: 20pt;
   text-shadow: black;
 }
-.info {
+.title > .info {
   margin-top: 7rem;
   font-size: 14pt;
   text-justify: auto;
+  overflow: hidden;
 }
 .col-3 {
   width: 100%;
