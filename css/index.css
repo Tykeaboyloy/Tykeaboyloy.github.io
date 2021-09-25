@@ -34,19 +34,20 @@
   background-repeat: no-repeat;
   position: absolute;
   top: 0;
+  background-repeat: round;
 }
 .icon {
   vertical-align: sub;
 }
-.navContainer> a:hover {
-  width:100%;
+.navContainer > a:hover {
+  width: 100%;
   background-color: #1abc9c;
 }
 .title {
   background-color: #89d8d3;
   background-image: linear-gradient(315deg, #89d8d3 0%, #03c8a8 74%);
   float: right;
-  width: 21vw;
+  width: 22vw;
   height: 62vh;
   position: absolute;
   right: 0vw;
@@ -77,31 +78,31 @@
 .col-3 img {
   width: 100%;
 }
-@media only screen and (min-width:500px){
-  .col-3{
-    width:50%;
+@media only screen and (min-width: 500px) {
+  .col-3 {
+    width: 50%;
   }
 }
-@media only screen and (min-width:768px) {
+@media only screen and (min-width: 768px) {
   .col-3 {
     width: 33.333%;
   }
 }
 
-@media only screen and (min-width:992px) {
+@media only screen and (min-width: 992px) {
   .col-3 {
     width: 16.666%;
   }
 }
-.arrival{
-  border-bottom:3px solid red;
-  padding:3px;
+.arrival {
+  border-bottom: 3px solid red;
+  padding: 3px;
 }
-.arrival > .material-icons{
+.arrival > .material-icons {
   vertical-align: bottom;
 }
-.arrival > a{
+.arrival > a {
   font-size: 20px;
   text-decoration: none;
-  color:black;
+  color: black;
 }
