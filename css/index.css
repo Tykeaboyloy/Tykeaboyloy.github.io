@@ -50,9 +50,13 @@
   left: 8rem;
   bottom: 17rem;
   padding: 1rem;
+  border: 5px solid #27a79c;
+  border-radius: 5px;
 }
 .icon {
   vertical-align: sub;
+  position: absolute;
+  left: 5rem;
 }
 .navContainer > a:hover {
   width: 100%;
