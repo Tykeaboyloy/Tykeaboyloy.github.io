@@ -30,7 +30,7 @@
   height: 62vh;
   margin-left: 16vw;
   z-index: 1;
-  background-image: url(/front-end/assets/banner1.png);
+  background-image: url(/assets/banner.png);
   background-repeat: no-repeat;
   position: absolute;
   top: 0;
