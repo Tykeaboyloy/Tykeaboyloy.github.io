@@ -14,7 +14,7 @@
   width: 10vw;
   height: 8vh;
   background-color: #27a79c;
-  text-align: center;
+  text-align: left;
 }
 .navContainer {
   display: flex;
@@ -22,13 +22,13 @@
   justify-content: space-around;
   width: 16vw;
   height: 62vh;
-  background-color: #27a79c;
-  align-items: center;
+  background-color: white;
+  align-items: flex-start;
 }
 .bg {
-  width: 62vw;
+  width: 68vw;
   height: 62vh;
-  margin-left: 16vw;
+  margin-left: 10vw;
   z-index: 1;
   background-image: url(/assets/banner.png);
   background-repeat: no-repeat;
@@ -55,8 +55,27 @@
 }
 .icon {
   vertical-align: sub;
+}
+.bookquote {
+  display: inline-block;
+  width: 33rem;
   position: absolute;
-  left: 5rem;
+  color: white;
+  font-size: 18pt;
+  bottom: 7rem;
+  left: 1.5rem;
+  text-align: center;
+}
+.stress {
+  color: cyan;
+}
+.bookquoteAuthur {
+  position: absolute;
+  color: white;
+  font-size: 18pt;
+  bottom: 4rem;
+  left: 25rem;
+  font-style: italic;
 }
 .navContainer > a:hover {
   width: 100%;
@@ -74,6 +93,7 @@
   text-align: center;
   color: white;
   padding: 2rem 0 2rem 0;
+  overflow: hidden;
 }
 .clear {
   clear: both;
@@ -87,7 +107,6 @@
   margin-top: 7rem;
   font-size: 14pt;
   text-justify: auto;
-  overflow: hidden;
   padding: 0.2rem;
 }
 .col-3 {
