@@ -22,7 +22,7 @@
   justify-content: space-around;
   width: 16vw;
   height: 62vh;
-  background-color: white;
+  background-color: #27a79c;
   align-items: center;
 }
 .bg {
@@ -30,28 +30,27 @@
   height: 62vh;
   margin-left: 16vw;
   z-index: 1;
-  background-image: url(https://png.pngtree.com/background/20210710/original/pngtree-blue-reading-flat-bookstore-poster-advertising-background-material-picture-image_994781.jpg);
+  background-image: url(https://pngpress.com/wp-content/uploads/2020/08/uploads_book_book_PNG51109.png);
   background-repeat: no-repeat;
-  position: relative;
-  top: -62vh;
+  position: absolute;
+  top: 0;
 }
 .icon {
   vertical-align: sub;
 }
-a:hover {
+.navContainer> a:hover {
+  width:100%;
   background-color: #1abc9c;
-}
-.title > h1 {
-  z-index: 2;
 }
 .title {
   background-color: #89d8d3;
   background-image: linear-gradient(315deg, #89d8d3 0%, #03c8a8 74%);
   float: right;
-  width: 20vw;
+  width: 21vw;
   height: 62vh;
-  position: relative;
-  top: -124vh;
+  position: absolute;
+  right: 0vw;
+  top: 0;
   text-align: center;
   color: white;
   padding: 2rem 0 2rem 0;
@@ -68,4 +67,41 @@ a:hover {
   margin-top: 7rem;
   font-size: 14pt;
   text-justify: auto;
+}
+.col-3 {
+  width: 100%;
+  float: left;
+  padding: 12px;
+}
+
+.col-3 img {
+  width: 100%;
+}
+@media only screen and (min-width:500px){
+  .col-3{
+    width:50%;
+  }
+}
+@media only screen and (min-width:768px) {
+  .col-3 {
+    width: 33.333%;
+  }
+}
+
+@media only screen and (min-width:992px) {
+  .col-3 {
+    width: 16.666%;
+  }
+}
+.arrival{
+  border-bottom:3px solid red;
+  padding:3px;
+}
+.arrival > .material-icons{
+  vertical-align: bottom;
+}
+.arrival > a{
+  font-size: 20px;
+  text-decoration: none;
+  color:black;
 }
