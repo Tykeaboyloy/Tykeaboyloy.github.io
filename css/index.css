@@ -8,14 +8,6 @@
   height: 150px;
   background-color: grey;
 }
-.element {
-  text-decoration: none;
-  color: white;
-  width: 10vw;
-  height: 8vh;
-  background-color: #27a79c;
-  text-align: center;
-}
 .navContainer {
   display: flex;
   flex-direction: column;
@@ -25,11 +17,22 @@
   background-color: #27a79c;
   align-items: center;
 }
+.element {
+  text-decoration: none;
+  color: white;
+  width: 10vw;
+  height:8vh;
+  background-color: #27a79c;
+  text-align:center;
+}
+.element li{
+  font-size: 20px;
+  margin-top:15px;
+}
 .bg {
   width: 62vw;
   height: 62vh;
   margin-left: 16vw;
-  z-index: 1;
   background-image: url(/assets/banner.png);
   background-repeat: no-repeat;
   position: absolute;
@@ -38,25 +41,26 @@
 }
 .searchicon {
   color: white;
-  font-size: 30pt;
+  font-size: 25pt;
   position: absolute;
-  bottom: 17.2rem;
-  left: 5rem;
+  bottom: 16.7rem;
+  left: 6rem;
 }
 .search > .searchinput {
   width: 22rem;
-  height: 3rem;
+  height: 2rem;
   position: absolute;
   left: 8rem;
   bottom: 17rem;
-  padding: 1rem;
-  border: 5px solid #27a79c;
-  border-radius: 5px;
+  padding:8px;
+  border: 2px solid #27a79c;
+  border-radius: 15px;
+  outline: none;
 }
 .icon {
   vertical-align: sub;
   position: absolute;
-  left: 5rem;
+  left: 2rem;
 }
 .navContainer > a:hover {
   width: 100%;
@@ -80,12 +84,12 @@
 }
 .webQuote {
   margin: 1rem;
-  font-size: 20pt;
+  font-size: 20px;
   text-shadow: black;
 }
 .title > .info {
   margin-top: 7rem;
-  font-size: 14pt;
+  font-size: 12pt;
   text-justify: auto;
   overflow: hidden;
   padding: 0.2rem;
