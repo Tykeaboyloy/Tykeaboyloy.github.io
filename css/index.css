@@ -14,7 +14,8 @@
   width: 10vw;
   height: 8vh;
   background-color: #27a79c;
-  text-align: center;
+  text-align: left;
+  padding: 0.5rem;
 }
 .navContainer {
   display: flex;
@@ -22,13 +23,13 @@
   justify-content: space-around;
   width: 16vw;
   height: 62vh;
-  background-color: #27a79c;
-  align-items: center;
+  background-color: white;
+  align-items: flex-start;
 }
 .bg {
-  width: 62vw;
+  width: 68vw;
   height: 62vh;
-  margin-left: 16vw;
+  margin-left: 10vw;
   z-index: 1;
   background-image: url(/assets/banner.png);
   background-repeat: no-repeat;
@@ -36,8 +37,47 @@
   top: 0;
   background-repeat: round;
 }
+.searchicon {
+  color: white;
+  font-size: 30pt;
+  position: absolute;
+  bottom: 17.2rem;
+  left: 2rem;
+}
+.search > .searchinput {
+  width: 22rem;
+  height: 3rem;
+  position: absolute;
+  left: 5rem;
+  bottom: 17rem;
+  padding: 1rem;
+  border: 5px solid #27a79c;
+  border-radius: 8px;
+  outline: none;
+}
 .icon {
   vertical-align: sub;
+}
+.bookquote {
+  display: inline-block;
+  width: 33rem;
+  position: absolute;
+  color: white;
+  font-size: 18pt;
+  bottom: 7rem;
+  left: 1.5rem;
+  text-align: center;
+}
+.stress {
+  color: cyan;
+}
+.bookquoteAuthur {
+  position: absolute;
+  color: white;
+  font-size: 18pt;
+  bottom: 4rem;
+  left: 25rem;
+  font-style: italic;
 }
 .navContainer > a:hover {
   width: 100%;
@@ -55,6 +95,7 @@
   text-align: center;
   color: white;
   padding: 2rem 0 2rem 0;
+  overflow: hidden;
 }
 .clear {
   clear: both;
@@ -64,10 +105,11 @@
   font-size: 20pt;
   text-shadow: black;
 }
-.info {
+.title > .info {
   margin-top: 7rem;
   font-size: 14pt;
   text-justify: auto;
+  padding: 0.2rem;
 }
 .col-3 {
   width: 100%;
