@@ -107,9 +107,8 @@
 }
 .title > .info {
   margin-top: 7rem;
-  font-size: 14pt;
-  text-justify: auto;
-  padding: 0.2rem;
+  font-size: 13pt;
+  padding: 1rem;
 }
 .col-3 {
   width: 100%;
