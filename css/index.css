@@ -3,45 +3,24 @@
   margin: 0;
   box-sizing: border-box;
 }
-
+body{
+  padding:5px;
+}
 .header {
-  display: grid;
-  grid-template-columns: 35% auto;
-  height: 25vh;
-  background: linear-gradient(to right, rgb(219, 144, 144), rgb(87, 87, 228), pink);
+  background: linear-gradient( rgba(254, 255, 254, 0.1) ,rgba(39, 36, 36, 0.9)) ,url(/assets/logo1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 45vh;
   position: relative;
 }
-
-.logo {
-  height: 100%;
-  width: 100%;
-  display: flex;
+.quote{
+  position: absolute;
+  padding-top:70px;
+  padding-left:50px;
 }
-
-.logo>span {
-  color: white;
-  margin-left: -30px;
-  margin-top: 30px;
-  color: ghostwhite
+.quote>#person{
+  margin-left: 100px;
 }
-
-.logo>img {
-  width: 190px;
-  height: 190px;
-  margin-left: 20px;
-}
-
-.language {
-  display: grid;
-  grid-template-rows: 40% auto;
-}
-
-.language>#search {
-  background-color: rgb(241, 235, 241);
-  border-radius: 0px 0px 0px 100px;
-  border: 1px solid rgb(240, 227, 227);
-}
-
 ul {
   height: 7vh;
   display: flex;
@@ -54,19 +33,21 @@ li a {
   text-decoration: none;
   color: black;
   font-size: 15pt;
+  border-left: 3px solid rgb(24, 21, 21);
+  height:100%;
 }
 
 .nav {
   background-color: rgb(241, 74, 74);
   margin-top: 5px;
 }
-
 li:hover a {
   color: teal;
 }
 
 .icon {
   vertical-align: sub;
+  margin-right: 5px;
 }
 
 .books {
@@ -105,8 +86,11 @@ li:hover a {
   font-size: 20px;
   line-height: 70px;
   text-align: center;
+  border-bottom:1px dotted black;
 }
-
+.booksCat>a:hover{
+  background-color: rgb(119, 164, 247);
+}
 .picture >.pic{
   display:grid;
   grid-template-columns: 25% 25% 25% 25%;
@@ -124,10 +108,11 @@ li:hover a {
 
 .arrival {
   width: 100%;
+  margin-left: 15px;
 }
 
 .arrival {
-  border-bottom: 3px solid red;
+  border-bottom: 5px solid rgb(235, 112, 112);
 }
 
 .textArrival>a {
