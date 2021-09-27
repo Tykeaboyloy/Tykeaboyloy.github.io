@@ -15,9 +15,6 @@
         margin: 0;
         box-sizing: border-box;
       }
-      body {
-        background: rgb(163, 241, 241);
-      }
       .header {
         display: grid;
         grid-template-columns: 35% auto;
@@ -75,28 +72,56 @@
       }
       .books {
         display: grid;
-        grid-template-columns: 15% auto;
-        height: 70vh;
+        grid-template-columns: 15% 5px auto;
+        height: 68vh;
       }
       .books > .booksCat {
         background-color: hotpink;
       }
       .books > .other {
         display: grid;
-        grid-template-rows: 50% 50%;
+        grid-template-rows: 4% 1% 47% 1% 47%;
+      }
+      .other > .background {
+        background-color: pink;
+      }
+      .other > .newAv {
+        background-color: red;
       }
       .other > #h1 {
         background-color: indianred;
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+      }
+      #h1 > #h11 {
+        padding: 5px;
+        background-color: white;
+      }
+      #h1 > #h12 {
+        padding: 5px;
+        background-color: white;
+      }
+      #h1 > #h13 {
+        background-color: teal;
+      }
+      #h1 > #h14 {
+        background-color: yellow;
       }
       .other > #h2 {
         display: grid;
-        grid-template-columns: 50% 50%;
+        grid-template-columns: 25% 25% 25% 25%;
       }
       #h2 > #h21 {
         background-color: indigo;
       }
       #h2 > #h22 {
         background-color: khaki;
+      }
+      #h2 > #h23 {
+        background-color: violet;
+      }
+      img {
+        width: 330px;
       }
     </style>
   </head>
@@ -149,11 +174,52 @@
     </div>
     <div class="books">
       <div class="booksCat">hi</div>
+      <div class="margin"></div>
       <div class="other">
-        <div id="h1">hi1</div>
+        <div class="newAv">New arrival</div>
+        <div></div>
+        <div id="h1">
+          <div id="h11">
+            <img
+              src="https://mcgregorcounseling.com/wp-content/uploads/2018/08/2H9A0133-800x600.jpg"
+              alt=""
+            />
+            <br />
+            <span
+              >This book is made in 1992 and it was very popular at those time
+              until now. It is made by Mr Jonh</span
+            >
+          </div>
+          <div id="h12">
+            <img
+              src="https://mcgregorcounseling.com/wp-content/uploads/2018/08/2H9A0133-800x600.jpg"
+              alt=""
+            />
+            <br />
+            <span
+              >This book is made in 1992 and it was very popular at those time
+              until now. It is made by Mr Jonh</span
+            >
+          </div>
+          <div class="hi" id="h13">
+            <img
+              src="https://mcgregorcounseling.com/wp-content/uploads/2018/08/2H9A0133-800x600.jpg"
+              alt=""
+            />
+            <br />
+            <span
+              >This book is made in 1992 and it was very popular at those time
+              until now. It is made by Mr Jonh</span
+            >
+          </div>
+          <div id="h14">h14</div>
+        </div>
+        <div></div>
         <div id="h2">
           <div id="h21">h21</div>
           <div id="h22">h22</div>
+          <div id="h23">h23</div>
+          <div id="h24">h24</div>
         </div>
       </div>
     </div>
