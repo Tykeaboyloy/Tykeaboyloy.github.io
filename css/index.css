@@ -26,6 +26,18 @@
   background-color: white;
   align-items: flex-start;
 }
+.element {
+  text-decoration: none;
+  color: white;
+  width: 10vw;
+  height:8vh;
+  background-color: #27a79c;
+  text-align:center;
+}
+.element li{
+  font-size: 20px;
+  margin-top:15px;
+}
 .bg {
   width: 68vw;
   height: 62vh;
@@ -39,14 +51,14 @@
 }
 .searchicon {
   color: white;
-  font-size: 30pt;
+  font-size: 25pt;
   position: absolute;
   bottom: 17.2rem;
   left: 2rem;
 }
 .search > .searchinput {
   width: 22rem;
-  height: 3rem;
+  height: 2rem;
   position: absolute;
   left: 5rem;
   bottom: 17rem;
@@ -102,7 +114,7 @@
 }
 .webQuote {
   margin: 1rem;
-  font-size: 20pt;
+  font-size: 20px;
   text-shadow: black;
 }
 .title > .info {
