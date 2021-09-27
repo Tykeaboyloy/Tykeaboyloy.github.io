@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frugality Book</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background: rgb(163, 241, 241);
+      }
+      .header {
+        display: grid;
+        grid-template-columns: 35% auto;
+        height: 25vh;
+        background: linear-gradient(
+          to right,
+          rgb(219, 144, 144),
+          rgb(87, 87, 228),
+          pink
+        );
+        position: relative;
+      }
+      .logo {
+        height: 100%;
+        width: 100%;
+        display: flex;
+      }
+      .logo > span {
+        color: white;
+        margin-left: -30px;
+        margin-top: 30px;
+        color: ghostwhite;
+      }
+      .logo > img {
+        width: 190px;
+        height: 190px;
+        margin-left: 20px;
+      }
+      .language {
+        display: grid;
+        grid-template-rows: 40% auto;
+      }
+      .language > #search {
+        background-color: rgb(241, 235, 241);
+        border-radius: 0px 0px 0px 100px;
+        border: 1px solid rgb(240, 227, 227);
+      }
+      ul {
+        height: 7vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+      }
+      li a {
+        text-decoration: none;
+        color: black;
+        font-size: 15pt;
+      }
+      li:hover a {
+        color: teal;
+      }
+      .icon {
+        vertical-align: sub;
+      }
+      .books {
+        display: grid;
+        grid-template-columns: 15% auto;
+        height: 70vh;
+      }
+      .books > .booksCat {
+        background-color: hotpink;
+      }
+      .books > .other {
+        display: grid;
+        grid-template-rows: 50% 50%;
+      }
+      .other > #h1 {
+        background-color: indianred;
+      }
+      .other > #h2 {
+        display: grid;
+        grid-template-columns: 50% 50%;
+      }
+      #h2 > #h21 {
+        background-color: indigo;
+      }
+      #h2 > #h22 {
+        background-color: khaki;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo">
+        <img
+          src="https://th.bing.com/th/id/R.520d8c30ebfdceb51fbcb68a8ed6928b?rik=FUMbNPym852Tag&riu=http%3a%2f%2fwww.biodiversityofindia.org%2fimages%2f9%2f96%2fBooks_logo.png&ehk=kwYJ11jit3vxlr1QFObX1XoymxLUSCyHPDSvkbzX5C8%3d&risl=&pid=ImgRaw&r=0"
+          alt="logo"
+        />
+        <span>
+          <h2>FRUGALITY BOOKS</h2>
+          <span
+            >Save Books Save money<br />
+            Save knowledge</span
+          >
+        </span>
+      </div>
+      <div class="language">
+        <div id="search">1</div>
+        <div id="">2</div>
+      </div>
+    </div>
+    <div class="nav">
+      <ul style="list-style: none" id="subNav">
+        <li>
+          <a href="#"><i class="material-icons icon">account_circle</i>Login</a>
+        </li>
+        <li class="">
+          <a href="#"><i class="material-icons icon">sell</i>Sell</a>
+        </li>
+        <li class="">
+          <a href="#"><i class="material-icons icon">redeem</i>Redeem</a>
+        </li>
+        <li class="">
+          <a href="#"><i class="material-icons icon">money_off</i>Donate</a>
+        </li>
+        <li class="">
+          <a href="#"
+            ><i class="material-icons icon">emoji_events</i>Challenge</a
+          >
+        </li>
+        <li>
+          <a href="#"> <i class="material-icons icon">category</i>Categories</a>
+        </li>
+        <li class="">
+          <a href="#"><i class="material-icons icon">group</i>About</a>
+        </li>
+      </ul>
+    </div>
+    <div class="books">
+      <div class="booksCat">hi</div>
+      <div class="other">
+        <div id="h1">hi1</div>
+        <div id="h2">
+          <div id="h21">h21</div>
+          <div id="h22">h22</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
