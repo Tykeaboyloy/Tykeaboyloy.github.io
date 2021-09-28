@@ -3,50 +3,23 @@
   margin: 0;
   box-sizing: border-box;
 }
-body {
-  padding: 5px;
+body{
+  padding:5px;
 }
 .header {
-  display: grid;
-  grid-template-columns: 35% auto;
-  height: 25vh;
-  background: linear-gradient(
-    to right,
-    rgb(219, 144, 144),
-    rgb(87, 87, 228),
-    pink
-  );
+  background: linear-gradient( rgba(254, 255, 254, 0.1) ,rgba(39, 36, 36, 0.9)) ,url(/assets/logo1.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 45vh;
   position: relative;
 }
-
-.logo {
-  height: 100%;
-  width: 100%;
-  display: flex;
+.quote{
+  position: absolute;
+  padding-top:70px;
+  padding-left:50px;
 }
-
-.logo > span {
-  color: white;
-  margin-left: -30px;
-  margin-top: 30px;
-  color: ghostwhite;
-}
-
-.logo > img {
-  width: 190px;
-  height: 190px;
-  margin-left: 20px;
-}
-
-.language {
-  display: grid;
-  grid-template-rows: 40% auto;
-}
-
-.language > #search {
-  background-color: rgb(241, 235, 241);
-  border-radius: 0px 0px 0px 100px;
-  border: 1px solid rgb(240, 227, 227);
+.quote>#person{
+  margin-left: 100px;
 }
 ul {
   height: 7vh;
@@ -61,7 +34,7 @@ li a {
   color: black;
   font-size: 15pt;
   border-left: 3px solid rgb(24, 21, 21);
-  height: 100%;
+  height:100%;
 }
 
 .nav {
@@ -83,79 +56,91 @@ li:hover a {
   height: 68vh;
 }
 
-.books > .booksCat {
-  background-color: rgb(235, 219, 227);
+.books>.booksCat {
+  background-color: rgb(246, 252, 244);
   margin-top: 5px;
 }
 
-.other {
+.other{
   display: grid;
   grid-template-rows: 4% 48% 48%;
 }
-.other > #h1 {
+.other>#h1 {
   background-color: rgb(248, 239, 239);
 }
 
-.other > #h2 {
+.other>#h2 {
   height: 20vh;
 }
 
-.other > #h1 > img {
+.other>#h1>img {
   width: 100%;
   height: 100%;
   margin-top: 5px;
   margin-left: 5px;
 }
 
-.booksCat > a {
+.booksCat>a {
   display: block;
   text-decoration: none;
   font-size: 20px;
-  line-height: 70px;
+  line-height: 50px;
   text-align: center;
-  border-bottom: 1px dotted black;
+  border-bottom:1px dotted black;
 }
-.booksCat > a:hover {
+.booksCat>a:hover{
   background-color: rgb(119, 164, 247);
 }
-
-.picture > .pic {
-  display: grid;
+.picture >.pic{
+  display:grid;
   grid-template-columns: 25% 25% 25% 25%;
-  justify-items: center;
 }
 
 .pic {
   width: 100%;
-  padding: 10px;
   height: 100%;
+  margin-bottom:-15px;
 }
 
-.pic > .hi > img {
+.pic>.hi>a img {
   width: 300px;
+  margin-top:15px;
 }
 
 .arrival {
   width: 100%;
-  border-bottom: 3px solid red;
+  margin-top:10px;
+  margin-left: 5px;
+  padding-bottom:25px;
+  border-bottom: 5px solid rgb(235, 112, 112);
 }
 
-.textArrival > a {
+.textArrival>a {
   text-decoration: none;
   font-size: 20px;
 }
 
-.arrival > .material-icons {
+.arrival>.material-icons {
   vertical-align: sub;
 }
-.hi {
-  padding: 5px;
-  border: 2px solid grey;
+.hi{
+  padding:5px;
 }
-.hi > input {
-  border: 1px solid blue;
+.hi>input{
+  border:1px solid blue;
   border-radius: 5px;
   background-color: aqua;
-  padding: 5px;
-  margin-left: 10px;
+  padding:5px;
+  margin-left:10px;
+}
+.header>#search{
+  margin-top:280px;
+  margin-left:20px;
+  width:300px;
+  height:30px;
+  border-radius: 15px;
+  border:2px solid blue;
+  outline:none;
+  padding-left:3px;
+  background-color:blanchedalmond
 }
