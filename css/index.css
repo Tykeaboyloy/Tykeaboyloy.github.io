@@ -3,7 +3,9 @@
   margin: 0;
   box-sizing: border-box;
 }
-
+body{
+  padding:5px;
+}
 .header {
   display: grid;
   grid-template-columns: 35% auto;
@@ -46,7 +48,6 @@
   border-radius: 0px 0px 0px 100px;
   border: 1px solid rgb(240, 227, 227);
 }
-
 ul {
   height: 7vh;
   display: flex;
@@ -59,19 +60,21 @@ li a {
   text-decoration: none;
   color: black;
   font-size: 15pt;
+  border-left: 3px solid rgb(24, 21, 21);
+  height:100%;
 }
 
 .nav {
   background-color: rgb(241, 74, 74);
   margin-top: 5px;
 }
-
 li:hover a {
   color: teal;
 }
 
 .icon {
   vertical-align: sub;
+  margin-right: 5px;
 }
 
 .books {
@@ -110,6 +113,10 @@ li:hover a {
   font-size: 20px;
   line-height: 70px;
   text-align: center;
+  border-bottom:1px dotted black;
+}
+.booksCat>a:hover{
+  background-color: rgb(119, 164, 247);
 }
 
 .picture > .pic {
