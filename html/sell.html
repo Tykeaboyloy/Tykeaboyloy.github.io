@@ -21,20 +21,19 @@
               margin: 0px;
               box-sizing: 0px;
             }
+            
+            
            form{
-             border: 2px solid rgb(54, 151, 168);
+             border: 5px solid rgb(33, 152, 173);
              width: 50%;
              margin: 0 auto;
-             background-color:rgb(204, 129, 141);
+             background-color:rgb(120, 146, 144);
              text-align: center;
              margin-top: 10%;
-            outline: none;
-            
+             border-radius: 5px;
+            outline : none;
+           
            }
-            
-            
-
-    
             
           .ccc >input{
           width: 300px;
@@ -50,24 +49,26 @@
            font-size: 19px;
            font-weight: bold;
          }
-         .submit{
-          width: 100px;
+         .ccc>button{
+          font-size: 19px;
+          font-weight: bold;
+         }
+         .ccc>.categary{
+          width: 300px;
           height: 30px;
          padding-left: 5px
-        }
+         }
+        
         </style>
     </head>
-    <body >
-      
-       
-    
+    <body style="background-image: url(./../photo-1541963463532-d68292c34b19\ \(2\).jfif);">
         
           <form >
             <div class="ccc">
+              
               <label for=""><b>Tiltle Book</b></label><br><br>          
               <input type="text" placeholder="enter your title book"><br><br>
-              <label for="email"><b>Email</b></label><br><br>
-              <input type="email" placeholder="Enter your email"><br><br>
+             
               <label for=""><b>Decribtion</b></label><br><br>
               <input type="" placeholder="book decribtion"><br><br>
               <label for=""><b>Book authoruse</b></label><br><br>
@@ -82,33 +83,32 @@
                 </select>
         
             </section><br><br>
-             
+            <label for=""><b>Categary</b></label><br><br>
+            <select class="categary">
+              <option value="">Love book</option>
+              <option value="">Motivation</option>
+              <option value="">History</option>
+              <option value="">Economic</option>
+              <option value="">Education</option>
+              <option value="">Budha</option>
+              <option value="">Religion</option>
+              <option value="">Continent</option>
+              <option value="">Asian</option>
+              <option value="">Member of Asian</option>
+              <option value="">Seasons</option>
+            </select><br><br>
+
             <label for=""><b>Price</b></label><br><br>
             <input type="number" placeholder="Price for book"><br><br><br>
              
-            <button type="submit">Submit</button>
-            <button type="cancel">Cancel</button>
+            <button style="background-color: green;"  type="submit">Submit</button>
+            <button style="background-color: red;" type="cancel">Cancel</button>
             
             </div>
              
         </form>
         </div>
-        <script>
-          var image = document.getElementById('image');
-
-function getUrl() {
-    var url = prompt('Enter image URL');
-    
-    if (url) { // Do string and URL validation here and also for image type
-        return url;
-    } else {
-        return getUrl();
-    }
-}
-
-image.src = getUrl();
-<img id="image"/>
-        </script>
+      
     
     </body>
     </html>
