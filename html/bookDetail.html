@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <title>Book Buyer</title>
+    <style>
+        body{
+            padding:50px;
+        }
+        .buy {
+            display: grid;
+            grid-template-columns: 30% 40% 30%;
+            margin-top: 10%;
+        }
+
+        .bookPic>img {
+            width: 400px;
+            height: 300px;
+        }
+        #star{
+            text-align:justify;
+        }
+        #star #s1,#s2,#s3,#s4{
+            color: orange;
+        }
+        .status>#subStatus{
+            margin-top:50px;
+        }
+        .status>#subStatus>input{
+            width:100px;
+            height:50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="buy">
+        <div class="bookPic">
+            <img src="https://mcgregorcounseling.com/wp-content/uploads/2018/08/2H9A0133-800x600.jpg" alt="">
+            <div id="star">
+                <span id="s1"class="material-icons">
+                    star_rate
+                </span>
+                <span id="s2" class="material-icons">
+                    star_rate
+                </span>
+                <span id="s3" class="material-icons">
+                    star_rate
+                </span>
+                <span id="s4"class="material-icons">
+                    star_rate
+                </span>
+                <span id="s5"class="material-icons">
+                    star_rate
+                </span>
+            </div>
+        </div>
+        <div class="status">
+            <h4>Rich Dad Poor Dad</h4>
+            <span>(find your dream here)</span>
+            <b>by: mr.A</b>
+            <div id="subStatus">
+                <input type="button"value="Good">
+                <input type="button"value="Like New">
+                <input type="button"value="Exeptable">
+                <input type="button"value="very good">
+                <input type="button"value="Excelent">
+            </div>
+        </div>
+        <div class="addToCart">3</div>
+</body>
+
+</html>
