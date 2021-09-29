@@ -7,8 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Frugality Book</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+
    <link rel="stylesheet" href="../css/index.css">
    
+
+    <link rel="stylesheet" href="/css/index.css">
 </head>
 
 <body>
@@ -17,15 +20,28 @@
             <span class="quote">
                 <h1>Frugality Book</h1>
                 <p>Save Book Save Money Save Knowledge</p><br>
+
                 <span>One advantage of talking<span style="color:aqua"> ot your self </span>is that you know <br>at least <span style="color:aqua">listening</span></span><br><br>
                 <p id="person"><i>-Franklin P.Jones</i></p>
             </span>
         </div>
+
+                <span>One advantage of talking<span style="color:aqua"> ot your self </span>is that you know <br>at
+                    least <span style="color:aqua">listening</span></span><br><br>
+                <p id="person"><i>-Franklin P.Jones</i></p>
+            </span>
+        </div>
+        <input id="search" type="text" placeholder="Search book titles here...">
+
     </div>
     <div class="nav">
         <ul style="list-style: none" id="subNav">
             <li class="">
+
                 <a href="#"><i class="material-icons icon">account_circle</i>Login</a>
+
+                <a href="/html/Login.html"><i class="material-icons icon">account_circle</i>Login</a>
+
             </li>
             <li class="">
                 <a href="#"><i class="material-icons icon">sell</i>Sell</a>
@@ -133,6 +149,78 @@
       </div>
   </div>
   </div>
+=======
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script>
+        var bookInfor = [
+            {
+                url: 'https://mcgregorcounseling.com/wp-content/uploads/2018/08/2H9A0133-800x600.jpg',
+                title: 'RICH DAD',
+                author: 'ROBERT T.KIYOSAKI',
+                price: '10$',
+            },
+            {
+                url: 'https://mcgregorcounseling.com/wp-content/uploads/2018/08/2H9A0133-800x600.jpg',
+                title: 'RICH DAD',
+                author: 'ROBERT T.KIYOSAKI',
+                price: '10$',
+            },
+            {
+                url: 'https://mcgregorcounseling.com/wp-content/uploads/2018/08/2H9A0133-800x600.jpg',
+                title: 'RICH DAD',
+                author: 'ROBERT T.KIYOSAKI',
+                price: '10$',
+            },
+            {
+                url: 'https://mcgregorcounseling.com/wp-content/uploads/2018/08/2H9A0133-800x600.jpg',
+                title: 'RICH DAD',
+                author: 'ROBERT T.KIYOSAKI',
+                price: '10$',
+            },
+            {
+                url: 'https://mcgregorcounseling.com/wp-content/uploads/2018/08/2H9A0133-800x600.jpg',
+                title: 'RICH DAD',
+                author: 'ROBERT T.KIYOSAKI',
+                price: '10$',
+            },
+            {
+                url: 'https://mcgregorcounseling.com/wp-content/uploads/2018/08/2H9A0133-800x600.jpg',
+                title: 'RICH DAD',
+                author: 'ROBERT T.KIYOSAKI',
+                price: '10$',
+            },
+            {
+                url: 'https://mcgregorcounseling.com/wp-content/uploads/2018/08/2H9A0133-800x600.jpg',
+                title: 'RICH DAD',
+                author: 'ROBERT T.KIYOSAKI',
+                price: '10$',
+            },
+            {
+                url: 'https://mcgregorcounseling.com/wp-content/uploads/2018/08/2H9A0133-800x600.jpg',
+                title: 'RICH DAD',
+                author: 'ROBERT T.KIYOSAKI',
+                price: '10$',
+            },
+        ]
+        var getElement = document.getElementsByClassName('pic')[0];
+        bookInfor.map((item,index)=>{
+            getElement.innerHTML=getElement.innerHTML+
+             `
+                <div class="hi">
+                    <a href="#"> <img src="${item.url}" alt="book"></a>
+                    <h4>Title:${item.title}</h4>
+                    <span>Author:${item.author}</span><br>
+                    <span><b style="color:red;">Price from : ${item.price}</b></span>
+                </div>
+          `
+        })
+    </script>
+
 </body>
 
 </html>
