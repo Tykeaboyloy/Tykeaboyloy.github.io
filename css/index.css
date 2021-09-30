@@ -22,7 +22,7 @@ body {
 .quote > #person {
   margin-left: 100px;
 }
-ul {
+#subNav {
   height: 7vh;
   display: flex;
   flex-direction: row;
@@ -81,16 +81,18 @@ li:hover a {
   margin-left: 5px;
 }
 
-.booksCat > a {
+.booksCat li {
   display: block;
-  text-decoration: none;
   font-size: 20px;
   line-height: 50px;
   text-align: center;
   border-bottom: 1px dotted black;
 }
-.booksCat > a:hover {
+.booksCat li button:hover {
   background-color: rgb(119, 164, 247);
+}
+.booksCat li button:focus{
+  background-color: pink;
 }
 .picture > .pic {
   display: grid;
@@ -104,7 +106,8 @@ li:hover a {
 }
 
 .pic > .hi > a img {
-  width: 100%;
+  width: 80%;
+  height: 80%;
   margin-top: 15px;
 }
 
@@ -116,8 +119,7 @@ li:hover a {
   border-bottom: 5px solid rgb(235, 112, 112);
 }
 
-.textArrival > a {
-  text-decoration: none;
+.textArrival{
   font-size: 20px;
 }
 
@@ -143,4 +145,11 @@ li:hover a {
   border: 2px solid cyan;
   outline: none;
   padding-left: 3px;
+}
+.booksCat li button {
+  width: 100%;
+  background-color: inherit;
+  border: none;
+  font-size: 20px;
+  line-height: 50px;
 }
