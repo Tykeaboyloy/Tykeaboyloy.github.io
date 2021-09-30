@@ -58,7 +58,12 @@ li:hover a {
 }
 
 .books > .booksCat {
-  background-color: rgb(246, 252, 244);
+  background: rgb(215, 100, 87);
+  background: linear-gradient(
+    0deg,
+    rgba(215, 100, 87, 1) 0%,
+    rgba(235, 198, 198, 1) 100%
+  );
   margin-top: 5px;
 }
 
@@ -89,10 +94,10 @@ li:hover a {
   border-bottom: 1px dotted black;
 }
 .booksCat li button:hover {
-  background-color: rgb(119, 164, 247);
+  background-color: #faafba;
 }
-.booksCat li button:focus{
-  background-color: pink;
+.booksCat li button:focus {
+  background-color: #f67280;
 }
 .picture > .pic {
   display: grid;
@@ -119,7 +124,7 @@ li:hover a {
   border-bottom: 5px solid rgb(235, 112, 112);
 }
 
-.textArrival{
+.textArrival {
   font-size: 20px;
 }
 

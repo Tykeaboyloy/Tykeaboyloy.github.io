@@ -55,6 +55,13 @@ var bookInfor = [
         price: '10$',
         category:'Horror',
     },
+    {
+        url: 'https://m.media-amazon.com/images/I/51jv4ITqI6L.jpg',
+        title: 'The Outsider',
+        author: 'Stephen King',
+        price: '10$',
+        category:'Horror',
+    },
 ]
 var getElement = document.getElementsByClassName('pic')[0];
 bookInfor.map((item,index)=>{
