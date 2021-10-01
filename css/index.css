@@ -86,17 +86,18 @@ li:hover a {
   margin-left: 5px;
 }
 
-.booksCat li {
+.booksCat a {
   display: block;
   font-size: 20px;
   line-height: 50px;
+  text-decoration: none;
   text-align: center;
   border-bottom: 1px dotted black;
 }
-.booksCat li button:hover {
+.booksCat a:hover {
   background-color: #faafba;
 }
-.booksCat li button:focus {
+.booksCat a:focus {
   background-color: #f67280;
 }
 .picture > .pic {
@@ -111,7 +112,7 @@ li:hover a {
 }
 
 .pic > .hi > a img {
-  width:70%;
+  width: 70%;
   /* height: 75%; */
   margin-top: 15px;
 }
@@ -150,11 +151,4 @@ li:hover a {
   border: 2px solid cyan;
   outline: none;
   padding-left: 3px;
-}
-.booksCat li button {
-  width: 100%;
-  background-color: inherit;
-  border: none;
-  font-size: 20px;
-  line-height: 50px;
 }
