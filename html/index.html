@@ -6,39 +6,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Frugality Book</title>
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-    />
-    <link rel="stylesheet" href="/css/index.css" />
-  </head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" href="./../css/index.css">
+</head>
 
 <body>
     <div class="header">
-      <div class="logo">
-        <span class="quote">
-          <h1>Frugality Book</h1>
-          <p>Save Book Save Money Save Knowledge</p>
-          <br />
-          <span
-            >One advantage of talking<span style="color: aqua">
-              to yourself </span
-            >is that you know <br />at least
-            <span style="color: aqua">somebody's listening</span></span
-          ><br /><br />
-          <p id="person"><i>-Franklin P.Jones</i></p>
-        </span>
-      </div>
-      <i
-        class="material-icons icon"
-        style="color: white; margin-left: 25px; vertical-align: sub"
-        >search</i
-      >
-      <input
-        id="search"
-        type="text"
-        placeholder=" Search book titles here..."
-      />
+        <div class="logo">
+            <span class="quote">
+                <h1>Frugality Book</h1>
+                <p>Save Book Save Money Save Knowledge</p><br>
+                <span>One advantage of talking<span style="color:aqua"> ot your self </span>is that you know <br>at
+                    least <span style="color:aqua">listening</span></span><br><br>
+                <p id="person"><i>-Franklin P.Jones</i></p>
+            </span>
+        </div>
+        <input id="search" type="text" placeholder="Search book titles here...">
     </div>
     <div class="nav">
         <ul style="list-style: none" id="subNav">
@@ -58,7 +41,7 @@
                 <a href="#"><i class="material-icons icon">emoji_events</i>Challenge</a>
             </li>
             <li>
-                <a href="#"> <i class="material-icons icon">contact_support</i>Contact</a>
+                <a href="#"> <i class="material-icons icon">category</i>Categories</a>
             </li>
             <li class="">
                 <a href="#"><i class="material-icons icon">group</i>About</a>
@@ -151,7 +134,7 @@
             getElement.innerHTML=getElement.innerHTML+
              `
                 <div class="hi">
-                    <a href="#"> <img src="${item.url}" alt="book"></a>
+                    <a href="/html/bookDetail.html" target="_blank"> <img src="${item.url}" alt="book"></a>
                     <h4>Title:${item.title}</h4>
                     <span>Author:${item.author}</span><br>
                     <span><b style="color:red;">Price from : ${item.price}</b></span>
