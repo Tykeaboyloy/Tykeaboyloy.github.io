@@ -83,3 +83,7 @@ bookInfor.map((item, index) => {
         </div>
   `;
 });
+function filter(x) {
+  document.getElementsByClassName("textArrival")[0].innerHTML = x;
+}
+
