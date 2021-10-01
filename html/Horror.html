@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="/css/index.css" />
     <link rel="shortcut icon" href="/assets/favicon.jpg" type="image/x-icon" />
     <style>
-      .booksCat a:nth-child(2) {
+      .booksCat a:nth-child(11) {
         background-color: #faafba;
       }
     </style>
@@ -96,7 +96,7 @@
       <div class="other">
         <div class="arrival">
           <span class="material-icons"> library_books </span>
-          <span class="textArrival">Romance</span>
+          <span class="textArrival">Horror</span>
         </div>
         <div class="picture">
           <div class="pic"></div>
@@ -176,6 +176,13 @@
           category: "Romance",
         },
         {
+          url: "https://images-na.ssl-images-amazon.com/images/I/918KkftCUFL.jpg",
+          title: "13 Reasons Why",
+          author: "Jay Asher",
+          price: "10$",
+          category: "Romance",
+        },
+        {
           url: "https://images-na.ssl-images-amazon.com/images/I/81zqDem9OvL.jpg",
           title: "Salem's Lot",
           author: "Stephen King",
@@ -185,7 +192,7 @@
       ];
       var getElement = document.getElementsByClassName("pic")[0];
       bookInfor
-        .filter((item) => item.category.includes("Romance"))
+        .filter((item) => item.category.includes("Horror"))
         .map((item, index) => {
           getElement.innerHTML =
             getElement.innerHTML +

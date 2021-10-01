@@ -69,23 +69,8 @@ li:hover a {
 
 .other {
   display: grid;
-  grid-template-rows: 4% 48% 48%;
+  grid-template-rows: auto;
 }
-.other > #h1 {
-  background-color: rgb(248, 239, 239);
-}
-
-.other > #h2 {
-  height: 20vh;
-}
-
-.other > #h1 > img {
-  width: 100%;
-  height: 100%;
-  margin-top: 5px;
-  margin-left: 5px;
-}
-
 .booksCat a {
   display: block;
   font-size: 20px;
@@ -108,21 +93,19 @@ li:hover a {
 .pic {
   width: 100%;
   height: 100%;
-  margin-bottom: -15px;
 }
 
 .pic > .hi > a img {
   width: 70%;
   /* height: 75%; */
-  margin-top: 15px;
+  /* margin-top: 15px; */
 }
 
 .arrival {
   width: 100%;
   margin-top: 10px;
   margin-left: 5px;
-  padding-bottom: 25px;
-  border-bottom: 5px solid rgb(235, 112, 112);
+  border-bottom: 5px solid red;
 }
 
 .textArrival {
