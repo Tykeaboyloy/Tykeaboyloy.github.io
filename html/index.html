@@ -7,10 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Frugality Book</title>
     <link
+    
       rel="stylesheet"
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
     />
     <link rel="stylesheet" href="/css/index.css" />
+    <link rel="shortcut icon" href="/assets/favicon.jpg" type="image/x-icon">
   </head>
 
 <body>
@@ -21,10 +23,10 @@
           <p>Save Book Save Money Save Knowledge</p>
           <br />
           <span
-            >One advantage of talking<span style="color: aqua">
+            >One advantage of talking<span style="color: deeppink">
               to yourself </span
             >is that you know <br />at least
-            <span style="color: aqua">somebody's listening</span></span
+            <span style="color:deeppink">somebody's listening</span></span
           ><br /><br />
           <p id="person"><i>-Franklin P.Jones</i></p>
         </span>
@@ -67,17 +69,20 @@
     </div>
     <div class="books">
         <div class="booksCat">
-            <a href="#">Love book</a>
-            <a href="#">Motivation</a>
-            <a href="#">History</a>
-            <a href="#">Economic</a>
-            <a href="#">Education</a>
-            <a href="#">Budha</a>
-            <a href="#">Religion</a>
-            <a href="#">Continent</a>
-            <a href="#">Asian</a>
-            <a href="#">Member of Asian</a>
-            <a href="#">Seasons</a>
+            <ul style="list-style-type: none;" class="">
+                <li><button onclick="filter('New Arrival')">New Arrival</button></li>
+                <li ><button onclick="filter('Romance')">Romance</button><li/>
+                <li ><button onclick="filter('Motivation')">Motivation</button><li/>
+                <li ><button onclick="filter('History')">History</button></li>
+                <li ><button onclick="filter('Economic')">Economic</button></li>
+                <li ><button onclick="filter('Buddha')">Buddha</button></li>
+                <li ><button onclick="filter('Education')">Education</button></li>
+                <li ><button onclick="filter('Religion')">Religion</button></li>
+                <li ><button onclick="filter('Continent')">Continent</button></li>
+                <li ><button onclick="filter('Asia')">Asia</button></li>
+                <li ><button onclick="filter('Member of Asian')">Member of Asian</button></li>
+                <li ><button onclick="filter('Season')">Season</button></li>
+            <ul/>
         </div>
         <div></div>
         <div class="other">
@@ -85,7 +90,7 @@
                 <span class="material-icons">
                     library_books
                 </span>
-                <span class="textArrival"><a href="#"><b>New Arrival</b></a></span>
+                <span class="textArrival">New Arrival</span>
             </div>
             <div class="picture">
                 <div class="pic">
@@ -95,70 +100,8 @@
         </div>
     </div>
     </div>
-    <script>
-        var bookInfor = [
-            {
-                url: 'https://mcgregorcounseling.com/wp-content/uploads/2018/08/2H9A0133-800x600.jpg',
-                title: 'RICH DAD',
-                author: 'ROBERT T.KIYOSAKI',
-                price: '10$',
-            },
-            {
-                url: 'https://mcgregorcounseling.com/wp-content/uploads/2018/08/2H9A0133-800x600.jpg',
-                title: 'RICH DAD',
-                author: 'ROBERT T.KIYOSAKI',
-                price: '10$',
-            },
-            {
-                url: 'https://mcgregorcounseling.com/wp-content/uploads/2018/08/2H9A0133-800x600.jpg',
-                title: 'RICH DAD',
-                author: 'ROBERT T.KIYOSAKI',
-                price: '10$',
-            },
-            {
-                url: 'https://mcgregorcounseling.com/wp-content/uploads/2018/08/2H9A0133-800x600.jpg',
-                title: 'RICH DAD',
-                author: 'ROBERT T.KIYOSAKI',
-                price: '10$',
-            },
-            {
-                url: 'https://mcgregorcounseling.com/wp-content/uploads/2018/08/2H9A0133-800x600.jpg',
-                title: 'RICH DAD',
-                author: 'ROBERT T.KIYOSAKI',
-                price: '10$',
-            },
-            {
-                url: 'https://mcgregorcounseling.com/wp-content/uploads/2018/08/2H9A0133-800x600.jpg',
-                title: 'RICH DAD',
-                author: 'ROBERT T.KIYOSAKI',
-                price: '10$',
-            },
-            {
-                url: 'https://mcgregorcounseling.com/wp-content/uploads/2018/08/2H9A0133-800x600.jpg',
-                title: 'RICH DAD',
-                author: 'ROBERT T.KIYOSAKI',
-                price: '10$',
-            },
-            {
-                url: 'https://mcgregorcounseling.com/wp-content/uploads/2018/08/2H9A0133-800x600.jpg',
-                title: 'RICH DAD',
-                author: 'ROBERT T.KIYOSAKI',
-                price: '10$',
-            },
-        ]
-        var getElement = document.getElementsByClassName('pic')[0];
-        bookInfor.map((item,index)=>{
-            getElement.innerHTML=getElement.innerHTML+
-             `
-                <div class="hi">
-                    <a href="/html/bookDetail.html" target="_blank"> <img src="${item.url}" alt="book"></a>
-                    <h4>Title:${item.title}</h4>
-                    <span>Author:${item.author}</span><br>
-                    <span><b style="color:red;">Price from : ${item.price}</b></span>
-                </div>
-          `
-        })
-    </script>
+    <script src="/js/bookData.js"></script>
+    <script src="/js/filter.js"></script>
 </body>
 
 </html>

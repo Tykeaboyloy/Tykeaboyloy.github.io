@@ -22,7 +22,7 @@ body {
 .quote > #person {
   margin-left: 100px;
 }
-ul {
+#subNav {
   height: 7vh;
   display: flex;
   flex-direction: row;
@@ -58,7 +58,12 @@ li:hover a {
 }
 
 .books > .booksCat {
-  background-color: rgb(246, 252, 244);
+  background: rgb(215, 100, 87);
+  background: linear-gradient(
+    0deg,
+    rgba(215, 100, 87, 1) 0%,
+    rgba(235, 198, 198, 1) 100%
+  );
   margin-top: 5px;
 }
 
@@ -81,16 +86,18 @@ li:hover a {
   margin-left: 5px;
 }
 
-.booksCat > a {
+.booksCat li {
   display: block;
-  text-decoration: none;
   font-size: 20px;
   line-height: 50px;
   text-align: center;
   border-bottom: 1px dotted black;
 }
-.booksCat > a:hover {
-  background-color: rgb(119, 164, 247);
+.booksCat li button:hover {
+  background-color: #faafba;
+}
+.booksCat li button:focus {
+  background-color: #f67280;
 }
 .picture > .pic {
   display: grid;
@@ -104,7 +111,8 @@ li:hover a {
 }
 
 .pic > .hi > a img {
-  width: 100%;
+  width:70%;
+  /* height: 75%; */
   margin-top: 15px;
 }
 
@@ -116,15 +124,14 @@ li:hover a {
   border-bottom: 5px solid rgb(235, 112, 112);
 }
 
-.textArrival > a {
-  text-decoration: none;
+.textArrival {
   font-size: 20px;
 }
 
 .arrival > .material-icons {
   vertical-align: sub;
 }
-<<<<<<< HEAD
+
 /* about us */
 .inner-container{
   width: 100%;
@@ -153,8 +160,6 @@ li:hover a {
       padding: 80px;
   }
 }
-
-=======
 .hi {
   padding: 5px;
 }
@@ -175,4 +180,10 @@ li:hover a {
   outline: none;
   padding-left: 3px;
 }
->>>>>>> 0d064184a0bbc5d28af6aa7f90d33497b6cbc73b
+.booksCat li button {
+  width: 100%;
+  background-color: inherit;
+  border: none;
+  font-size: 20px;
+  line-height: 50px;
+}
