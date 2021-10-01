@@ -8,9 +8,11 @@
     <title>Frugality Book</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
     <link rel="stylesheet" href="/css/index.css">
+   
 </head>
 
 <body>
+   
     <div class="header">
         <div class="logo">
             <span class="quote">
@@ -29,7 +31,7 @@
                 <a href="/html/Login.html"><i class="material-icons icon">account_circle</i>Login</a>
             </li>
             <li class="">
-                <a href="#"><i class="material-icons icon">sell</i>Sell</a>
+                <a href="/html/form.html"><i class="material-icons icon">sell</i>Sell</a>
             </li>
             <li class="">
                 <a href="#"><i class="material-icons icon">redeem</i>Redeem</a>
@@ -51,7 +53,7 @@
     <div class="books">
         <div class="booksCat">
             <a href="#">Love book</a>
-            <a href="#">Motivation</a>
+            <a href="./motivation.html">Motivation</a>
             <a href="#">History</a>
             <a href="#">Economic</a>
             <a href="#">Education</a>
@@ -78,70 +80,7 @@
         </div>
     </div>
     </div>
-    <script>
-        var bookInfor = [
-            {
-                url: 'https://mcgregorcounseling.com/wp-content/uploads/2018/08/2H9A0133-800x600.jpg',
-                title: 'RICH DAD',
-                author: 'ROBERT T.KIYOSAKI',
-                price: '10$',
-            },
-            {
-                url: 'https://mcgregorcounseling.com/wp-content/uploads/2018/08/2H9A0133-800x600.jpg',
-                title: 'RICH DAD',
-                author: 'ROBERT T.KIYOSAKI',
-                price: '10$',
-            },
-            {
-                url: 'https://mcgregorcounseling.com/wp-content/uploads/2018/08/2H9A0133-800x600.jpg',
-                title: 'RICH DAD',
-                author: 'ROBERT T.KIYOSAKI',
-                price: '10$',
-            },
-            {
-                url: 'https://mcgregorcounseling.com/wp-content/uploads/2018/08/2H9A0133-800x600.jpg',
-                title: 'RICH DAD',
-                author: 'ROBERT T.KIYOSAKI',
-                price: '10$',
-            },
-            {
-                url: 'https://mcgregorcounseling.com/wp-content/uploads/2018/08/2H9A0133-800x600.jpg',
-                title: 'RICH DAD',
-                author: 'ROBERT T.KIYOSAKI',
-                price: '10$',
-            },
-            {
-                url: 'https://mcgregorcounseling.com/wp-content/uploads/2018/08/2H9A0133-800x600.jpg',
-                title: 'RICH DAD',
-                author: 'ROBERT T.KIYOSAKI',
-                price: '10$',
-            },
-            {
-                url: 'https://mcgregorcounseling.com/wp-content/uploads/2018/08/2H9A0133-800x600.jpg',
-                title: 'RICH DAD',
-                author: 'ROBERT T.KIYOSAKI',
-                price: '10$',
-            },
-            {
-                url: 'https://mcgregorcounseling.com/wp-content/uploads/2018/08/2H9A0133-800x600.jpg',
-                title: 'RICH DAD',
-                author: 'ROBERT T.KIYOSAKI',
-                price: '10$',
-            },
-        ]
-        var getElement = document.getElementsByClassName('pic')[0];
-        bookInfor.map((item,index)=>{
-            getElement.innerHTML=getElement.innerHTML+
-             `
-                <div class="hi">
-                    <a href="/html/bookDetail.html" target="_blank"> <img src="${item.url}" alt="book"></a>
-                    <h4>Title:${item.title}</h4>
-                    <span>Author:${item.author}</span><br>
-                    <span><b style="color:red;">Price from : ${item.price}</b></span>
-                </div>
-          `
-        })
-    </script>
+    <script src="/js/bookData.js"></script>
 </body>
 
 </html>

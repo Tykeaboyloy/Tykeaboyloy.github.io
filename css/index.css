@@ -93,17 +93,18 @@ li:hover a {
 }
 .picture >.pic{
   display:grid;
-  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-columns: 20% 20% 20% 20% 20%;
 }
 
 .pic {
   width: 100%;
   height: 100%;
-  margin-bottom:-15px;
+  margin-bottom:-20px;
 }
 
 .pic>.hi>a img {
-  width: 300px;
+  width: 200px;
+  height:300px;
   margin-top:15px;
 }
 
