@@ -7,7 +7,7 @@ var bookInfor = [
     category: "Romance",
   },
   {
-    url: "https://lh3.googleusercontent.com/proxy/QM7vQ3_Srge1Qx9YmM_EWO6j7YsxKHS5Gvuehw0yrB2GDlmab5SUj4R4QeUz7wEgCCzS0XVCXVWn-qXKy8Daayc0DL2KBCdvndxepk2gKpyYBb3L2KeM1ws_-ag1P-Q2YA",
+    url: "https://images-na.ssl-images-amazon.com/images/I/71I0yJf5h8L.jpg",
     title: "To all the boys I've loved before",
     author: "Jenny Han",
     price: "10$",
@@ -83,3 +83,7 @@ bookInfor.map((item, index) => {
         </div>
   `;
 });
+function filter(x) {
+  document.getElementsByClassName("textArrival")[0].innerHTML = x;
+}
+
