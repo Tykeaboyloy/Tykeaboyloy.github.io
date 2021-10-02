@@ -45,6 +45,28 @@
         type="text"
         placeholder=" Search book titles here..."
       />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" href="/css/index.css">
+    <style>
+        .active{
+            color: green;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo">
+            <span class="quote">
+                <h1>Frugality Book</h1>
+                <p>Save Book Save Money Save Knowledge</p><br>
+                <span>One advantage of talking<span style="color:aqua"> ot your self </span>is that you know <br>at
+                    least <span style="color:aqua">listening</span></span><br><br>
+                <p id="person"><i>-Franklin P.Jones</i></p>
+            </span>
+        </div>
+        <input id="search" type="text" placeholder="Search book titles here...">
     </div>
     <div class="nav">
         <ul style="list-style: none" id="subNav">
@@ -65,6 +87,7 @@
             </li>
             <li>
                 <a href="#"> <i class="material-icons icon">contact_support</i>Contact</a>
+                <a href="#"> <i class="material-icons icon">category</i>Categories</a>
             </li>
             <li class="">
                 <a href="#"><i class="material-icons icon">group</i>About</a>
@@ -86,6 +109,17 @@
             <a >Horror</a>
             <a >Season</a>
             <ul/>
+            <a href="#">Love book</a>
+            <a class="active" href="./motivation.html">Motivation</a>
+            <a href="#">History</a>
+            <a href="#">Economic</a>
+            <a href="#">Education</a>
+            <a href="#">Budha</a>
+            <a href="#">Religion</a>
+            <a href="#">Continent</a>
+            <a href="#">Asian</a>
+            <a href="#">Member of Asian</a>
+            <a href="#">Seasons</a>
         </div>
         <div></div>
         <div class="other">
@@ -94,11 +128,13 @@
                     library_books
                 </span>
                 <span class="textArrival">motivation</span>
+                <span class="textArrival"><a href="#"><b>New Arrival</b></a></span>
             </div>
             <div class="picture">
                 <div class="pic">
 
                 </div> 
+                </div>
             </div>
         </div>
     </div>
@@ -163,6 +199,96 @@
                 </div>
              `
         })
+        // var bookInfor = [
+        //     {
+        //         url: 'https://mcgregorcounseling.com/wp-content/uploads/2018/08/2H9A0133-800x600.jpg',
+        //         title: 'RICH DAD',
+        //         author: 'ROBERT T.KIYOSAKI',
+        //         price: '10$',
+        //         category:'Religion'
+        //     },
+        //     {
+        //         url: 'https://mcgregorcounseling.com/wp-content/uploads/2018/08/2H9A0133-800x600.jpg',
+        //         title: 'RICH DAD',
+        //         author: 'ROBERT T.KIYOSAKI',
+        //         price: '10$',
+        //         category:'Romance'
+        //     },
+        //     {
+        //         url: 'https://mcgregorcounseling.com/wp-content/uploads/2018/08/2H9A0133-800x600.jpg',
+        //         title: 'RICH DAD',
+        //         author: 'ROBERT T.KIYOSAKI',
+        //         price: '10$',
+        //         category:'Religion'
+        //     },
+        //     {
+        //         url: 'https://mcgregorcounseling.com/wp-content/uploads/2018/08/2H9A0133-800x600.jpg',
+        //         title: 'RICH DAD',
+        //         author: 'ROBERT T.KIYOSAKI',
+        //         price: '10$',
+        //         category:'Religion'
+        //     },
+        //     {
+        //         url: 'https://mcgregorcounseling.com/wp-content/uploads/2018/08/2H9A0133-800x600.jpg',
+        //         title: 'RICH DAD',
+        //         author: 'ROBERT T.KIYOSAKI',
+        //         price: '10$',
+        //         category:'Motivation'
+        //     },
+        //     {
+        //         url: 'https://mcgregorcounseling.com/wp-content/uploads/2018/08/2H9A0133-800x600.jpg',
+        //         title: 'RICH DAD',
+        //         author: 'ROBERT T.KIYOSAKI',
+        //         price: '10$',
+        //         category:'Religion'
+        //     },
+        //     {
+        //         url: 'https://mcgregorcounseling.com/wp-content/uploads/2018/08/2H9A0133-800x600.jpg',
+        //         title: 'RICH DAD',
+        //         author: 'ROBERT T.KIYOSAKI',
+        //         price: '10$',
+        //         category:'Romance'
+        //     },
+        //     {
+        //         url: 'https://mcgregorcounseling.com/wp-content/uploads/2018/08/2H9A0133-800x600.jpg',
+        //         title: 'RICH DAD',
+        //         author: 'ROBERT T.KIYOSAKI',
+        //         price: '10$',
+        //         category:'Motivation'
+        //     },
+        //     {
+        //         url: 'https://mcgregorcounseling.com/wp-content/uploads/2018/08/2H9A0133-800x600.jpg',
+        //         title: 'RICH DAD',
+        //         author: 'ROBERT T.KIYOSAKI',
+        //         price: '10$',
+        //         category:'Motivation'
+        //     },
+        //     {
+        //         url: 'https://mcgregorcounseling.com/wp-content/uploads/2018/08/2H9A0133-800x600.jpg',
+        //         title: 'RICH DAD',
+        //         author: 'ROBERT T.KIYOSAKI',
+        //         price: '10$',
+        //         category:'Motivation'
+        //     },
+        // ]
+        var Book=JSON.parse(localStorage.getItem("books"));
+        // console.log(Book);
+        var getElement = document.getElementsByClassName('pic')[0];
+        if(Book.length > 0){
+            Book.filter(item=>item.bookCat.includes("Motivation")).map((item,index)=>{
+            getElement.innerHTML=getElement.innerHTML+
+             `
+                <div class="hi">
+                    <a href="/html/bookDetail.html" target="_blank"> <img src="${item.bookLink}" alt="book"></a>
+                    <h4>Title:${item.bookTitle}</h4>
+                    <span>Author:${item.bookAuthor}</span><br>
+                    <span><b style="color:red;">Price from : ${item.bookPrice}</b></span>
+                </div>
+             `
+        })
+        }
+        
+   
     </script>
 </body>
 

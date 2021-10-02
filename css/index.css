@@ -98,16 +98,23 @@ li:hover a {
 .booksCat a:hover {
   background-color: #faafba;
 }
+<<<<<<< HEAD
 .booksCat a:active {
   color: white;
 }
 .picture > .pic {
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
+=======
+.picture >.pic{
+  display:grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+>>>>>>> 4da704085b131ffdf325c1ea4ceea0b7a8b8184d
 }
 .pic {
   width: 100%;
   height: 100%;
+<<<<<<< HEAD
   margin-bottom: -15px;
 }
 
@@ -115,6 +122,15 @@ li:hover a {
   width: 70%;
   /* height: 75%; */
   margin-top: 15px;
+=======
+  margin-bottom:-20px;
+}
+
+.pic>.hi>a img {
+  width: 200px;
+  height:300px;
+  margin-top:15px;
+>>>>>>> 4da704085b131ffdf325c1ea4ceea0b7a8b8184d
 }
 
 .arrival {
