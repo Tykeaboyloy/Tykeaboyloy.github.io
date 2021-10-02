@@ -7,7 +7,7 @@ body{
   padding:5px;
 }
 .header {
-  background: linear-gradient( rgba(254, 255, 254, 0.1) ,rgba(39, 36, 36, 0.9)) ,url(/front-end/assets/logo1.jpg);
+  background: linear-gradient( rgba(254, 255, 254, 0.1) ,rgba(39, 36, 36, 0.9)) ,url(/assets/logo1.jpg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   height: 45vh;
