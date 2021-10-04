@@ -3,22 +3,23 @@
   margin: 0;
   box-sizing: border-box;
 }
-body{
-  padding:5px;
+body {
+  padding: 5px;
 }
 .header {
-  background: linear-gradient( rgba(254, 255, 254, 0.1) ,rgba(39, 36, 36, 0.9)) ,url(/assets/logo1.jpg);
+  background: linear-gradient(rgba(254, 255, 254, 0.1), rgba(39, 36, 36, 0.9)),
+    url(/assets/logo1.jpg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   height: 45vh;
   position: relative;
 }
-.quote{
+.quote {
   position: absolute;
-  padding-top:70px;
-  padding-left:50px;
+  padding-top: 70px;
+  padding-left: 50px;
 }
-.quote>#person{
+.quote > #person {
   margin-left: 100px;
 }
 ul {
@@ -34,11 +35,22 @@ li a {
   color: black;
   font-size: 15pt;
   border-left: 3px solid rgb(24, 21, 21);
-  height:100%;
+  height: 100%;
 }
 
 .nav {
-  background-color: rgb(241, 74, 74);
+  background: #ff416c; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #ff4b2b,
+    #ff416c
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #ff4b2b,
+    #ff416c
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   margin-top: 5px;
 }
 li:hover a {
@@ -49,99 +61,114 @@ li:hover a {
   vertical-align: sub;
   margin-right: 5px;
 }
-
+.header > i {
+  margin-left: 10px;
+  margin-right: 0px;
+  vertical-align: sub;
+}
 .books {
   display: grid;
   grid-template-columns: 15% 0.5% 84.5%;
   height: 68vh;
 }
 
-.books>.booksCat {
-  background-color: rgb(246, 252, 244);
+.books > .booksCat {
+  background: #ff416c; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #ff4b2b,
+    #ff416c
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #ff4b2b,
+    #ff416c
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   margin-top: 5px;
 }
 
-.other{
+.other {
   display: grid;
   grid-template-rows: 4% 48% 48%;
 }
-.other>#h1 {
+.other > #h1 {
   background-color: rgb(248, 239, 239);
 }
 
-.other>#h2 {
+.other > #h2 {
   height: 20vh;
 }
 
-.other>#h1>img {
+.other > #h1 > img {
   width: 100%;
   height: 100%;
   margin-top: 5px;
   margin-left: 5px;
 }
-
-.booksCat>a {
+.booksCat > a {
   display: block;
   text-decoration: none;
+  color: black;
   font-size: 20px;
   line-height: 50px;
   text-align: center;
-  border-bottom:1px dotted black;
+  border-bottom: 1px dotted black;
 }
-.booksCat>a:hover{
+.booksCat > a:hover {
   background-color: rgb(119, 164, 247);
 }
-.picture >.pic{
-  display:grid;
+.picture > .pic {
+  display: grid;
   grid-template-columns: 20% 20% 20% 20% 20%;
 }
 
 .pic {
   width: 100%;
   height: 100%;
-  margin-bottom:-20px;
+  margin-bottom: -20px;
 }
 
-.pic>.hi>a img {
+.pic > .hi > a img {
   width: 200px;
-  height:300px;
-  margin-top:15px;
+  height: 300px;
+  margin-top: 15px;
 }
 
 .arrival {
   width: 100%;
-  margin-top:10px;
+  margin-top: 10px;
   margin-left: 5px;
-  padding-bottom:25px;
+  padding-bottom: 25px;
   border-bottom: 5px solid rgb(235, 112, 112);
 }
 
-.textArrival>a {
+.textArrival > a {
   text-decoration: none;
   font-size: 20px;
 }
 
-.arrival>.material-icons {
+.arrival > .material-icons {
   vertical-align: sub;
 }
-.hi{
-  padding:5px;
+.hi {
+  padding: 5px;
 }
-.hi>input{
-  border:1px solid blue;
+.hi > input {
+  border: 1px solid blue;
   border-radius: 5px;
   background-color: aqua;
-  padding:5px;
-  margin-left:10px;
+  padding: 5px;
+  margin-left: 10px;
 }
-.header>#search{
-  margin-top:280px;
-  margin-left:20px;
-  width:300px;
-  height:30px;
-  border-radius: 15px;
-  border:2px solid blue;
-  outline:none;
-  padding-left:3px;
-  background-color:blanchedalmond
+.header > #search {
+  margin-top: 280px;
+  margin-left: 20px;
+  width: 300px;
+  height: 40px;
+  border-radius: 9px;
+  border: 2px solid cyan;
+  outline: none;
+  padding-left: 3px;
+  background-color: white;
 }
