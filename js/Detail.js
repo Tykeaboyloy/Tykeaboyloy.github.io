@@ -3,7 +3,7 @@ var getElement = document.getElementsByClassName("pic")[0];
 var bookInfor = JSON.parse(localStorage.getItem("books"))
 console.log(bookInfor);
 function handleClickItem(index) {
-    window.open("/front-end/html/bookDetail.html")
+    window.open("/html/bookDetail.html")
   event.preventDefault();
   console.log(bookInfor[index].bookLink);
   document.getElementById("addToCart").innerHTML = `<img style="width:100px;height:100px;"src="${bookInfor[index].bookLink}" alt="book">`;
