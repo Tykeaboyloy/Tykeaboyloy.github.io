@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="/css/index.css">
     <style>
         .active{
+            color: green;
             font-size: 20px;
         }
     </style>
@@ -84,7 +85,7 @@
         // console.log(Book);
         var getElement = document.getElementsByClassName('pic')[0];
         if(Book.length > 0){
-            Book.filter(item=>item.bookCat.includes("Motivation")).map((item,index)=>{
+            Book.filter(item=>item.bookCat.includes("Continent")).map((item,index)=>{
             getElement.innerHTML=getElement.innerHTML+
              `
                 <div class="hi">

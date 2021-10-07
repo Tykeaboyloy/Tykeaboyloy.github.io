@@ -81,7 +81,7 @@
     </div>
       <form  >
         <div  class="form">
-            <input id="bookLink" type="url" placeholder="Enter Book Picture(By Picture Link)" required><br><br>
+    
           <input id="bookPdfLink" type="url" placeholder="Enter pdf book(Pdf Link)" required><br><br>
           <input id="bookTitle" type="text" placeholder="Enter your Book title" required><br><br>
           </select><br><br>
@@ -97,7 +97,7 @@
       
         function getValueFromDonator() {
            
-        var bookLink = document.getElementById('bookLink');
+        
         var bookLink = document.getElementById('bookPdfLink');
         var bookTitle = document.getElementById('bookTitle');
        
@@ -109,7 +109,7 @@ localStorage.setItem("books", "[]")
           var bookStore=JSON.parse(localStorage.getItem("books"))||[]
        
         let bookObject = {
-          "bookLink": bookLink.value,
+      
           "bookPdfLink":bookPdfLink.value,
           "bookTitle": bookTitle.value,
           

@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="/css/index.css">
     <style>
         .active{
+            color: green;
             font-size: 20px;
         }
     </style>
@@ -52,6 +53,7 @@
     </div>
     <div class="books">
         <div class="booksCat">
+            <a class ="active"href="">Read Free</a>
             <a class="active" href="./romance.html">Love book</a>
             <a class="active" href="./motivation.html">Motivation</a>
             <a class="active" href="./History.html">History</a>
@@ -84,7 +86,7 @@
         // console.log(Book);
         var getElement = document.getElementsByClassName('pic')[0];
         if(Book.length > 0){
-            Book.filter(item=>item.bookCat.includes("Motivation")).map((item,index)=>{
+            Book.filter(item=>item.bookCat.includes("Read Free")).map((item,index)=>{
             getElement.innerHTML=getElement.innerHTML+
              `
                 <div class="hi">

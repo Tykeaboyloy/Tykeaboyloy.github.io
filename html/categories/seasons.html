@@ -8,11 +8,15 @@
     <title>Frugality Book</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
     <link rel="stylesheet" href="/css/index.css">
-   
+    <style>
+        .active{
+            color: green;
+            font-size: 20px;
+        }
+    </style>
 </head>
 
 <body>
-   
     <div class="header">
         <div class="logo">
             <span class="quote">
@@ -31,13 +35,13 @@
                 <a href="/html/Login.html"><i class="material-icons icon">account_circle</i>Login</a>
             </li>
             <li class="">
-                <a href="/html/form.html"><i class="material-icons icon">sell</i>Sell</a>
+                <a href="#"><i class="material-icons icon">sell</i>Sell</a>
             </li>
             <li class="">
-                <a href="#"><i class="material-icons icon">redeem</i>Donate Book</a>
+                <a href="#"><i class="material-icons icon">redeem</i>Redeem</a>
             </li>
-            <li class="readFree">
-                <a href="#"><i class="material-icons icon">money_off</i>Read Free</a>
+            <li class="">
+                <a href="#"><i class="material-icons icon">money_off</i>Donate</a>
             </li>
             <li class="">
                 <a href="#"><i class="material-icons icon">emoji_events</i>Challenge</a>
@@ -47,6 +51,19 @@
             </li>
         </ul>
     </div>
+    <div class="books">
+        <div class="booksCat">
+            <a class="active" href="./romance.html">Love book</a>
+            <a class="active" href="./motivation.html">Motivation</a>
+            <a class="active" href="./History.html">History</a>
+            <a class="active" href="./Economic.html">Economic</a>
+            <a class="active" href="./education.html">Education</a>
+            <a class="active" href="./Religion.html">Religion</a>
+            <a class="active" href="./Continent.html">Continent</a>
+            <a class="active" href="./Member of Asian.html">Member of Asian</a>
+            <a class="active" href="./seasons.html">Seasons</a>
+        </div>
+        <div></div>
         <div class="other">
             <div class="arrival">
                 <span class="material-icons">
@@ -68,13 +85,14 @@
         // console.log(Book);
         var getElement = document.getElementsByClassName('pic')[0];
         if(Book.length > 0){
-            Book.filter(item=>item.readFree.includes("Read Free")).map((item,index)=>{
+            Book.filter(item=>item.bookCat.includes("Seasons")).map((item,index)=>{
             getElement.innerHTML=getElement.innerHTML+
              `
                 <div class="hi">
-                    <img src="${item.bookLink}" alt="book"></a>
-                    <a href=""
+                    <a href="/html/bookDetail.html" target="_blank"> <img src="${item.bookLink}" alt="book"></a>
                     <h4>Title:${item.bookTitle}</h4>
+                    <span>Author:${item.bookAuthor}</span><br>
+                    <span><b style="color:red;">Price from : ${item.bookPrice}</b></span>
                 </div>
              `
         })
