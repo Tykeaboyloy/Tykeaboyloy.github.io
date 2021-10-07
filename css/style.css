@@ -68,8 +68,8 @@ li:hover a {
 }
 .books {
   display: grid;
-  grid-template-columns: 15% 0.5% 84.5%;
-  height: 68vh;
+  grid-template-columns: 15% 0.5% 84.5% ;
+  height: 48vh;
 }
 
 .books > .booksCat {
@@ -112,6 +112,7 @@ li:hover a {
   color: black;
   font-size: 20px;
   line-height: 50px;
+  color:black;
   text-align: center;
   border-bottom: 1px dotted black;
 }
