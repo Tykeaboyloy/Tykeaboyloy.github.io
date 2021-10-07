@@ -7,8 +7,14 @@
     <title>Document</title>
 </head>
 <style>
-body {font-family: Arial, Helvetica, sans-serif;}
-form {border: 3px solid #f1f1f1;}
+body {font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  top: 1vh;
+width: 70vw;
+height: 60vh;
+margin: auto;
+padding: auto;}
+form {border: 5px solid #F67280;}
 
 input[type=text], input[type=password], input[type=email] {
   width: 100%;
@@ -44,8 +50,7 @@ button:hover {
 }
 
 img.avatar {
-  width: 20%;
-  border-radius: 50%;
+  width: 10%;
 }
 
 .container {
@@ -75,7 +80,7 @@ span.psw {
 
 <form action="/action_page.php" method="post">
   <div class="imgcontainer">
-    <img src="../images/photo.png" alt="Avatar" class="avatar">
+    <img src="/assets/logo.jpg" alt="Avatar" class="avatar">
   </div>
 
   <div class="container">
@@ -98,7 +103,7 @@ span.psw {
   </div>
 
   <div class="container" style="background-color:#f1f1f1">
-    <button type="button" class="cancelbtn">Cancel</button>
+    <a href="/html/index.html"><button type="button" class="cancelbtn">Cancel</button></a>
   </div>
 </form>
 <img src="/html/bookDetail.html" alt="">

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frugality Book</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="shortcut icon" href="/assets/favicon.jpg" type="image/x-icon" />
+    <style>
+      .booksCat a:nth-child(11) {
+        background-color: #faafba;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="header">
+      <div class="logo">
+        <span class="quote">
+          <h1>Frugality Book</h1>
+          <p>Save Book Save Money Save Knowledge</p>
+          <br />
+          <span
+            >One advantage of talking<span style="color: deeppink">
+              to yourself </span
+            >is that you know <br />at least
+            <span style="color: deeppink">somebody's listening</span></span
+          ><br /><br />
+          <p id="person"><i>-Franklin P.Jones</i></p>
+        </span>
+      </div>
+      <i
+        class="material-icons icon"
+        style="color: white; margin-left: 25px; vertical-align: sub"
+        >search</i
+      >
+      <input
+        id="search"
+        type="text"
+        placeholder=" Search book titles here..."
+      />
+    </div>
+    <div class="nav">
+      <ul style="list-style: none" id="subNav">
+        <li class="">
+          <a href="/html/Login.html"
+            ><i class="material-icons icon">account_circle</i>Login</a
+          >
+        </li>
+        <li class="">
+          <a href="/html/sell.html"
+            ><i class="material-icons icon">sell</i>Sell</a
+          >
+        </li>
+        <li class="">
+          <a href="#"><i class="material-icons icon">redeem</i>Redeem</a>
+        </li>
+        <li class="">
+          <a href="#"><i class="material-icons icon">money_off</i>Donate</a>
+        </li>
+        <li class="">
+          <a href="#"
+            ><i class="material-icons icon">emoji_events</i>Challenge</a
+          >
+        </li>
+        <li>
+          <a href="#">
+            <i class="material-icons icon">contact_support</i>Contact</a
+          >
+        </li>
+        <li class="">
+          <a href="#"><i class="material-icons icon">group</i>About</a>
+        </li>
+      </ul>
+    </div>
+    <div class="books">
+      <div class="booksCat">
+        <a href="/html/index.html">New Arrival</a>
+        <a href="/html/romance.html">Romance</a>
+        <a href="/html/Motivation.html">Motivation</a>
+        <a>History</a>
+        <a>Economic</a>
+        <a>Buddha</a>
+        <a>Education</a>
+        <a>Religion</a>
+        <a>Continent</a>
+        <a>Asia</a>
+        <a href="/html/Horror.html">Horror</a>
+        <a>Season</a>
+        <ul />
+      </div>
+      <div></div>
+      <div class="other">
+        <div class="arrival">
+          <span class="material-icons"> library_books </span>
+          <span class="textArrival">Horror</span>
+        </div>
+        <div class="picture">
+          <div class="pic"></div>
+        </div>
+      </div>
+    </div>
+    <script>
+      var bookInfor = [
+        {
+          url: "https://images-na.ssl-images-amazon.com/images/I/81D-gdnku+L.jpg",
+          title: "They Both Die at the End",
+          author: "Adam Silvera",
+          price: "10$",
+          category: "Romance",
+        },
+        {
+          url: "https://images-na.ssl-images-amazon.com/images/I/71I0yJf5h8L.jpg",
+          title: "To all the boys I've loved before",
+          author: "Jenny Han",
+          price: "10$",
+          category: "Romance",
+        },
+        {
+          url: "https://images-na.ssl-images-amazon.com/images/I/61JS5pSCQqL.jpg",
+          title: "P.S. I still love you",
+          author: "Jenny Han",
+          price: "10$",
+          category: "Romance",
+        },
+        {
+          url: "https://images-na.ssl-images-amazon.com/images/I/71aKL1ss9KL.jpg",
+          title: "Always and Forever",
+          author: "Jenny Han",
+          price: "10$",
+          category: "Romance",
+        },
+        {
+          url: "https://m.media-amazon.com/images/I/41nngxCNKxL.jpg",
+          title: "IT",
+          author: "Stphen King",
+          price: "10$",
+          category: "Horror",
+        },
+        {
+          url: "https://images-na.ssl-images-amazon.com/images/I/81uQocUlNcL.jpg",
+          title: "Green Mile",
+          author: "Stephen King",
+          price: "10$",
+          category: "Crime",
+        },
+        {
+          url: "http://prodimage.images-bn.com/pimages/9780345806789_p0_v2_s1200x630.jpg",
+          title: "The Shinning",
+          author: "Stephen King",
+          price: "10$",
+          category: "Horror",
+        },
+        {
+          url: "https://m.media-amazon.com/images/I/41tATg+hmiL.jpg",
+          title: "The Long Walk",
+          author: "Stephen King",
+          price: "10$",
+          category: "Horror",
+        },
+        {
+          url: "https://m.media-amazon.com/images/I/51jv4ITqI6L.jpg",
+          title: "The Outsider",
+          author: "Stephen King",
+          price: "10$",
+          category: "Horror",
+        },
+        {
+          url: "https://images-na.ssl-images-amazon.com/images/I/918KkftCUFL.jpg",
+          title: "13 Reasons Why",
+          author: "Jay Asher",
+          price: "10$",
+          category: "Romance",
+        },
+        {
+          url: "https://images-na.ssl-images-amazon.com/images/I/918KkftCUFL.jpg",
+          title: "13 Reasons Why",
+          author: "Jay Asher",
+          price: "10$",
+          category: "Romance",
+        },
+        {
+          url: "https://images-na.ssl-images-amazon.com/images/I/81zqDem9OvL.jpg",
+          title: "Salem's Lot",
+          author: "Stephen King",
+          price: "10$",
+          category: "Horror",
+        },
+      ];
+      var getElement = document.getElementsByClassName("pic")[0];
+      bookInfor
+        .filter((item) => item.category.includes("Horror"))
+        .map((item, index) => {
+          getElement.innerHTML =
+            getElement.innerHTML +
+            `
+                <div class="hi">
+                    <a href="/html/bookDetail.html" target="_blank"> <img src="${item.url}" alt="book"></a>
+                    <h4>Title:${item.title}</h4>
+                    <span>Author:${item.author}</span><br>
+                    <span><b style="color:red;">Price from : ${item.price}</b></span>
+                </div>
+             `;
+        });
+    </script>
+    <script>
+      var Book = JSON.parse(localStorage.getItem("books"));
+      // console.log(Book);
+      var getElement = document.getElementsByClassName("pic")[0];
+      if (Book.length > 0) {
+        Book.filter((item) => item.bookCat.includes("Horror")).map(
+          (item, index) => {
+            getElement.innerHTML =
+              getElement.innerHTML +
+              `
+                <div class="hi">
+                    <a href="/html/bookDetail.html" target="_blank"> <img src="${item.bookLink}" alt="book"></a>
+                    <h4>Title:${item.bookTitle}</h4>
+                    <span>Author:${item.bookAuthor}</span><br>
+                    <span><b style="color:red;">Price from : ${item.bookPrice}</b></span>
+                </div>
+             `;
+          }
+        );
+      }
+    </script>
+  </body>
+</html>

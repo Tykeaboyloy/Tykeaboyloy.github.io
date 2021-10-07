@@ -1,5 +1,4 @@
 
-//get values from user and store them in localStorage
 
 <!DOCTYPE html>
 <html lang="en">
@@ -54,7 +53,7 @@
           border: 1px solid black;
         }
 
-        .form>button {
+        .form>button, .form>a>button{
           font-size: 19px;
           font-weight: 30px;
           margin: 50px;
@@ -81,21 +80,24 @@
           </select>
           </select><br><br>
           <select id="bookCat" class="categary">
-            <option value="Love book">Love book</option>
+            <option value="Romance">Love</option>
             <option value="Motivation">Motivation</option>
-            <option value="">History</option>
-            <option value="">Economic</option>
-            <option value="">Education</option>
-            <option value="">Budha</option>
-            <option value="">Religion</option>
-            <option value="">Continent</option>
-            <option value="">Asian</option>
-            <option value="">Member of Asian</option>
-            <option value="">Seasons</option>
+            <option value="History">History</option>
+            <option value="Economic">Economic</option>
+            <option value="Education">Education</option>
+            <option value="Horror">Horror</option>
+            <option value="Buddha">Budha</option>
+            <option value="Religion">Religion</option>
+            <option value="Continent">Continent</option>
+            <option value="Asia">Asian</option>
+            <option value="Member of Asia">Member of Asian</option>
+            <option value="Seasons">Seasons</option>
           </select><br><br>
           <input id="bookPrice" type="number" placeholder=" Enter Book's Price " required><br>
-          <button onclick="getValueFromSeller()" style="background-color: rgb(107, 250, 107);"
-           >Submit</button>
+            <a href="/html/index.html">
+              <button onclick="getValueFromSeller()" style="background-color: rgb(107, 250, 107);"
+               >Submit</button>
+            </a>
           <button style="background-color: rgb(238, 107, 107);" type="cancel">Cancel</button>
         </div>
         <div class="conditon" style="font-size: 20px;">
@@ -106,8 +108,10 @@
         <div id="hello">
           
         </div>
+       
       </form>
       <script>
+        //get values from user and store them in localStorage
       
         function getValueFromSeller() {
            
@@ -116,34 +120,33 @@
         var bookDisc = document.getElementById('bookDisc');
         var bookAuthor = document.getElementById('bookAuthor');
         var bookStatus = document.getElementById('bookStatus');
-        var bookCat = document.getElementById('bookCat');
-        var bookPrice = document.getElementById('bookPrice');
+        var bookCat = document.getElementById('bookCat');var bookPrice = document.getElementById('bookPrice');
         
        
-          if (!Boolean(localStorage.getItem("books"))) {
+        if (!Boolean(localStorage.getItem("books"))) {
 
 localStorage.setItem("books", "[]")
-          }
-          console.log(localStorage.getItem("books"))
-          var bookStore=JSON.parse(localStorage.getItem("books"))||[]
-       
-        let bookObject = {
-          "bookLink": bookLink.value,
-          "bookTitle": bookTitle.value,
-          "bookDisc": bookDisc.value,
-          "bookAuthor": bookAuthor.value,
-          "bookStatus": bookStatus.value,
-          "bookCat": bookCat.value,
-          "bookPrice": bookPrice.value,
         }
-        bookStore.push(bookObject);
-        localStorage.setItem("books", JSON.stringify(bookStore));
-       return false;
-        }
-       var Book=JSON.parse(localStorage.getItem("books"))
-        console.log(Book);
-      </script>
-      
-    </body>
+        console.log(localStorage.getItem("books"))
+        var bookStore=JSON.parse(localStorage.getItem("books"))||[]
+     
+      let bookObject = {
+        "bookLink": bookLink.value,
+        "bookTitle": bookTitle.value,
+        "bookDisc": bookDisc.value,
+        "bookAuthor": bookAuthor.value,
+        "bookStatus": bookStatus.value,
+        "bookCat": bookCat.value,
+        "bookPrice": bookPrice.value,
+      }
+      bookStore.push(bookObject);
+      localStorage.setItem("books", JSON.stringify(bookStore));
+     return false;
+      }
+     var Book=JSON.parse(localStorage.getItem("books"))
+      console.log(Book);
+    </script>
+    
+  </body>
 
-    </html>
+  </html>

@@ -4,10 +4,10 @@
   box-sizing: border-box;
 }
 body{
-  padding:5px;
+  padding:10px 50px;
 }
 .header {
-  background: linear-gradient( rgba(254, 255, 254, 0.1) ,rgba(39, 36, 36, 0.9)) ,url(/assets/logo1.jpg);
+  background: linear-gradient( rgba(254, 255, 254, 0.1) ,rgba(39, 36, 36, 0.9)) ,url(../assets/logo1.jpg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   height: 45vh;
@@ -52,8 +52,8 @@ li:hover a {
 
 .books {
   display: grid;
-  grid-template-columns: 15% 0.5% 84.5%;
-  height: 68vh;
+  grid-template-columns: 15% 0.5% 84.5% ;
+  height: 48vh;
 }
 
 .books>.booksCat {
@@ -70,7 +70,7 @@ li:hover a {
 }
 
 .other>#h2 {
-  height: 20vh;
+  height: 15vh;
 }
 
 .other>#h1>img {
@@ -102,7 +102,7 @@ li:hover a {
   margin-bottom:-20px;
 }
 
-.pic>.hi>a img {
+.pic>.hi> a img {
   width: 200px;
   height:300px;
   margin-top:15px;
@@ -132,7 +132,7 @@ li:hover a {
   border-radius: 5px;
   background-color: aqua;
   padding:5px;
-  margin-left:10px;
+  margin-left:8px;
 }
 .header>#search{
   margin-top:280px;
@@ -144,4 +144,11 @@ li:hover a {
   outline:none;
   padding-left:3px;
   background-color:blanchedalmond
+}
+.footer{
+  background-color: aqua;
+  width:100%;
+  margin-top:40px;
+  height:13vh;
+  z-index:2;
 }

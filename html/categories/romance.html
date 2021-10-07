@@ -8,9 +8,9 @@
   <title>Frugality Book</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
   <link rel="stylesheet" href="/front-end/css/index.css" />
-  <link rel="shortcut icon" href="/front-end/assets/favicon.jpg" type="image/x-icon" />
+  <link rel="shortcut icon" href="/assets/favicon.jpg" type="image/x-icon" />
   <style>
-    .booksCat a:first-child {
+    .booksCat a:nth-child(2) {
       background-color: #faafba;
     }
   </style>
@@ -30,15 +30,15 @@
       </span>
     </div>
     <i class="material-icons icon" style="color: white; margin-left: 25px; vertical-align: sub">search</i>
-    <input id="search" type="text" placeholder=" Search book titles here..." />
+    <input id="search" type="text" placeholder=" Search bookbookTitles here..." />
   </div>
   <div class="nav">
     <ul style="list-style: none" id="subNav">
       <li class="">
-        <a href="/front-end/html/Login.html"><i class="material-icons icon">account_circle</i>Login</a>
+        <a href="/html/Login.html"><i class="material-icons icon">account_circle</i>Login</a>
       </li>
       <li class="">
-        <a href="/front-end/html/sell.html"><i class="material-icons icon">sell</i>Sell</a>
+        <a href="/html/sell.html"><i class="material-icons icon">sell</i>Sell</a>
       </li>
       <li class="">
         <a href="#"><i class="material-icons icon">redeem</i>Redeem</a>
@@ -60,41 +60,49 @@
   </div>
   <div class="books">
     <div class="booksCat">
-      <a href="/html/index.html">New Arrival</a>
-      <a href="../html/categories/romance.html">Romance</a>
-      <a href="../html/categories/motivation.html">Motivation</a>
-      <a href="#">History</a>
-      <a href="#">Economic</a>
-      <a href="#">Religion</a>
-      <a href="#">Education</a>
-      <a href="#">Continent</a>
-      <a href="#">Asia</a>
+      <a href="../index.html">New Arrival</a>
+      <a href="/html/romance.html">Romance</a>
+      <a href="../categories/motivation.html">Motivation</a>
+      <a>History</a>
+      <a>Economic</a>
+      <a>Buddha</a>
+      <a>Education</a>
+      <a>Religion</a>
+      <a>Continent</a>
+      <a>Asia</a>
       <a href="/html/Horror.html">Horror</a>
-      <a href="#">Season</a>
+      <a>Season</a>
       <ul />
     </div>
     <div></div>
     <div class="other">
       <div class="arrival">
         <span class="material-icons"> library_books </span>
-        <span class="textArrival">New Arrival</span>
+        <span class="textArrival">Romance</span>
       </div>
       <div class="picture">
-        <div class="pic">
-
-        </div>
+        <div class="pic"></div>
       </div>
-     
     </div>
-    
-    </div>
-    <!-- <div class="footer">
-      hello
-    </div>
-   -->
-  <script src="/front-end/js/Detail.js">
+  </div>
  
-  </script> 
+  <script>
+    Book = JSON.parse(localStorage.getItem("books"))
+     console.log(Book);
+    var getElement = document.getElementsByClassName("pic")[0];
+    Book.filter((item) => item.bookCat.includes("Romance")).map((item, index) => {
+        getElement.innerHTML =
+          getElement.innerHTML +
+          `
+                <div class="hi">
+                    <a href="../bookDetail.html" target="_blank"> <img src="${item.bookLink}" alt="book"></a>
+                    <h4>Title:${item.bookTitle}</h4>
+                    <span>Author:${item.bookAuthor}</span><br>
+                    <span><b style="color:red;">bookPrice from : ${item.bookPrice}</b></span>
+                </div>
+             `;
+      });
+  </script>
 </body>
 
 </html>
