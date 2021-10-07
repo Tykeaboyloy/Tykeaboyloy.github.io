@@ -57,7 +57,7 @@ li:hover a {
 }
 
 .books>.booksCat {
-  background-color: rgb(246, 252, 244);
+  background-color: rgb(228, 99, 99);
   margin-top: 5px;
 }
 
@@ -66,7 +66,7 @@ li:hover a {
   grid-template-rows: 4% 48% 48%;
 }
 .other>#h1 {
-  background-color: rgb(248, 239, 239);
+  background-color: rgb(240, 22, 22);
 }
 
 .other>#h2 {
@@ -85,6 +85,7 @@ li:hover a {
   text-decoration: none;
   font-size: 20px;
   line-height: 50px;
+  color:black;
   text-align: center;
   border-bottom:1px dotted black;
 }

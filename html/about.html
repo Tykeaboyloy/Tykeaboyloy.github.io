@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  height:400px;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="about-section">
+  <h1>About Us Page</h1>
+  <h4>Frugality Book</h4>
+  <p>We can sell , buy and donate book with us . Moreover you can read free with us too!!</p>
+  <p>Keep your old book save your money and share them with us.</p>
+</div>
+
+<h2 style="text-align:center"><u>Our Team</u></h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="https://scontent.fpnh1-1.fna.fbcdn.net/v/t1.6435-9/71903425_473040186642946_4880665230171963392_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=W0VdagNjYNoAX9UtWR6&tn=v00e3-8C_Ql97UQG&_nc_ht=scontent.fpnh1-1.fna&oh=7225f37f335340e128713790670e40ff&oe=61828B49" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2>Sievmey</h2>
+        <p class="title">CEO & Founder</p>
+        <p>Hello my name is Sievmey and I'm CEO and Founder of Frugality_book Project!!</p>
+        <a href="https://www.facebook.com/sievmey.touch" style="text-decoration: none;"><span>Contact me: </span>https://www.facebook.com/sievmey.touch</a>
+       
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="https://scontent.fpnh1-2.fna.fbcdn.net/v/t1.6435-9/124857393_814514305786978_8873367568026503926_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=VQ9zuM27jcAAX948Wcm&_nc_ht=scontent.fpnh1-2.fna&oh=5b0fa4cb9c91a20dfc57a4019f4e7bd1&oe=6184D2F9" alt="Mike" style="width:100%;">
+      <div class="container">
+        <h2>Phirun</h2>
+        <p class="title">Developer & designer</p>
+        <p>Hi my name is Phirun and I'm developer and designer in our project.</p>
+        <a href="https://www.facebook.com/pirunoem" style="text-decoration: none;"><p>Contact me : </p>https://www.facebook.com/pirunoem</a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="https://scontent.fpnh1-1.fna.fbcdn.net/v/t1.6435-9/35386395_127407888143370_7724183293817520128_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=_QoYMD9b6GAAX-vzpqu&_nc_ht=scontent.fpnh1-1.fna&oh=fa2bb523f4348894b4877dac02458796&oe=6185055B" alt="John" style="width:100%">
+      <div class="container">
+        <h2>Vitou</h2>
+        <p class="title">Developer</p>
+        <p>Hello everyone!! I am Vitou who is a developer in Frugality_book project.</p>
+        <a href="https://www.facebook.com/vansin.tuo.56" style="text-decoration: none;"><p>Contact me : </p>https://www.facebook.com/vansin.tuo.56</a>
+       
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="https://scontent.fpnh1-1.fna.fbcdn.net/v/t31.18172-8/29064500_416670015459363_4656197911485601049_o.jpg?_nc_cat=100&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=5pRtdLoZ9VkAX_14Ojl&tn=v00e3-8C_Ql97UQG&_nc_ht=scontent.fpnh1-1.fna&oh=9cf62345528692ed1d81e49d75ce20fb&oe=6185CFC9" alt="John" style="width:100%">
+      <div class="container">
+        <h2>Tykea</h2>
+        <p class="title">Developer</p>
+        <p>Hello guys!! I am Tykea. My position is a developer in Frugality_book project.</p>
+        <a href="https://www.facebook.com/Tykeaboyloy" style="text-decoration: none;"><p>Contact me : </p>https://www.facebook.com/Tykeaboyloy</a>
+       
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
